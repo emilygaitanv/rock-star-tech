@@ -7,31 +7,101 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" href="stylesheets/fotorama.js">
+    <link rel="stylesheet" href="stylesheets/jquery.fancybox.min.css">
     <title>Rock Start Tech</title>
 </head>
 <body>
-    <nav>
-        <img src="./Resources/icon-menu-28px.svg" alt="menu" class="menu">
-
-        <div class="navbar-left">
-            <img src="./Resources/Logo-P-42px.svg" alt="logo" class="logo">
-        </div>
-
-        <div class="navbar-right">
-            <ul>
-                <li>
-                    <a href="/">Blog</a>
-                </li>
-
-                <li>
-                    <a href="/">Eventos</a>
-                </li>
-
-                <li>
-                    <a href="/">Contactanos</a>
-                </li>
+    <header>
+        <h1 id="logo">Rock Start Tech</h1>
+        <nav id="menu">
+            <ul id="burger">
+                <li><a href="#menu" id="open">Abrir</a></li>
+                <li><a href="#" id="close">Cerrar</a></li>
             </ul>
-        </div>
-    </nav>
+            <ul id="bar">
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="#contactanos">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sec-01">
+            <h2 id="title_01">¿Quienes Somos?</h2>
+            <article class="art-quienessomos">
+                <figure class="sec_quienessomos">
+                    <picture>
+                        <source media="(min-width: 577px)" srcset="img/01_Mision_Asset_v1.png">
+                        <source media="(min-width: 992px)" srcset="img/01_Mision_Asset_v1.png">
+                        <img src="img/01_Mision_Alt_Asset_v1.svg" alt="">
+                    </picture>
+                </figure>
+                <h3 class="">Misión</h3>
+                <p>Impulsar la colaboración y el aprendizaje en tecnología, creando una comunidad activa y compartiendo conocimientos.</p>
+            </article>
+
+            <article>
+                <figure><img src="" alt=""></figure>
+                <h3>Visión</h3>
+                <p>Convertirnos en el epicentro global de la comunidad tecnológica, liderando la innovación y la colaboración continua.</p>
+            </article>
+
+            <article>
+                <figure><img src="" alt=""></figure>
+                <h3>Valores</h3>
+                <p>Colaboración activa, diversidad, aprendizaje constante, innovación y apoyo solidario definen nuestra comunidad.</p>
+            </article>
+
+            <article>
+                <figure><img src="" alt=""></figure>
+                <h3>Objetivos</h3>
+                <p>Facilitar el aprendizaje, crear contenido destacado, organizar eventos inspiradores, conectar a profesionales y contribuir al avance tecnológico global.</p>
+            </article>
+        </section>
+
+        <section id="sec-02">
+            <article id="team" class="Container-team">
+                <figure class="team-profile"><img src="" alt=""></figure>
+                <h3 class="team">Sergei Casero</h3>
+                <p class="title-team"></p>
+            </article>
+            <article id="team" class="Container-team">
+                <figure class="team-profile"><img src="" alt=""></figure>
+                <h3 class="team">Paulo French</h3>
+                <p class="title-team"></p>
+            </article>
+            <article id="team" class="Container-team">
+                <figure class="team-profile"><img src="" alt=""></figure>
+                <h3 class="team">Emily Gaitan</h3>
+                <p class="title-team"></p>
+            </article>
+            <article id="team" class="Container-team">
+                <figure class="team-profile"><img src="" alt=""></figure>
+                <h3 class="team">Kiara Del Corro</h3>
+                <p class="title-team"></p>
+            </article>
+        </section>
+
+        <section>
+            <h2 id="title_03"></h2>
+            <div id="galeria">
+                <a href=""
+                    data-fancybox="galeria"
+                    data-scrset="">
+                    <img src="" alt="">
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ------------------------------------JS SHEETS------------------------------------ -->
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/fotorama.js"></script>
+
 </body>
 </html>

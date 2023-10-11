@@ -1,8 +1,9 @@
 *{
+    padding: 0;
     margin: 0;
     font-family: 'Quicksand', sans-serif;
     font-family: 'Space Grotesk', sans-serif;
-    background-color: var(--neutral-dark-mode);
+    box-sizing: border-box;
 }
 
 :root {
@@ -14,52 +15,215 @@
     --secondary-french-fucsia: #FF4298;
     --primary-lavander-indigo: #8D4EEB;
     --bl: 16px; line-height: 30px;
+    --wv: 18px; line-height: 34px;
+    --mv: 24px; line-height: 38px;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 32px 10px 32px;
-    height: 60px;
-
+body {
+    color: var(--neutral-white);
+    background-color: var(--neutral-dark-mode);
 }
 
-.menu{
-    display: none;
+header {
+    margin: 1rem 1.5rem;
 }
 
-.logo{
+#logo {
+    background: url(./resources/Logo-P-42px.svg);
+    background-size: 4rem;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+h1 {
+    width: 100%;
+    height: 3.5rem;
+    text-indent: -8000px;
+    overflow: hidden;
+}
+
+#open {
+    background: url(./Resources/icon-menu-28px.svg);
+    background-size: 2.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#close {
+    background: url(./resources/icon-menu-close-28px.svg);
+    background-size: 2.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#burger li a {
+    display: block;
+    width: 4rem;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+#menu {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
 }
 
-.navbar-right ul{
-    list-style: none;
-    padding: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    height: 44px;
-    gap: 22px;
+#burger {
+    text-indent: -8000px;
+    overflow: hidden;
+    padding: 0 20px 0 20px;
 }
 
-.navbar-right ul li a{
-    text-decoration: none;
+#bar {
+    display: none;
+    height: calc(100vh - 4.8rem);
+    background-color: var(--neutral-70);
+}
+
+#bar li a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 40px;
+    font-size: var(--mv);
     color: var(--neutral-white);
-    font-size: var(--bl);
-    line-height: 30px;
-    font-weight: 400;
+    text-decoration: none;
 }
 
-@media (max-width: 640px){
-    .menu{
-        display: block;
+#burger li:last-child {
+    display: none;
+}
+
+#menu:target #bar {
+    display: block;
+}
+
+nav:target #burger li:first-child {
+    display: none;
+}
+
+nav:target #burger li:last-child {
+    display: flex;
+}
+
+/* ------------------------------------HERO SECTION----------------------------- */
+
+/* ------------------------------------QUIENES SOMOS----------------------------- */
+
+#sec-01 {
+    font-size: var(--wv);
+}
+
+#sec-01 h2 {
+    text-align: center;
+}
+
+#title_01 {
+    font-family: 'Quicksand';
+    margin: 1rem;
+    padding: 1rem;
+}
+
+#sec-01 article {
+    text-align: center;
+    padding: 0 5rem 2rem 5rem;
+}
+
+.art-quienessomos table {
+    font-size: var(--wv);
+}
+
+table tr td figure {
+    display: block;
+}
+
+#sec-01 h3 {
+    font-size: 1.8rem;
+    padding: 0.5rem;
+    text-transform: uppercase;
+}
+
+/* ------------------------------------TABLET VIEW----------------------------- */
+
+@media screen and (min-width: 577px) {
+    /* ------------------------------------NAV BAR----------------------------- */
+
+    header {
+        margin: 1rem 1.5rem;
     }
 
-    .navbar-left ul{
+    #logo {
+        background: url(./resources/01_Logo_Brand_RockStartTech_Colour_White_Asset_MW_P1_v1-12.svg);
+        background-size: 20rem;
+        background-repeat: no-repeat;
+    }
+
+    #burger li {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+/* ------------------------------------WEBSIDE VIEW----------------------------- */
+
+@media screen and (min-width: 992px) {
+    /* ------------------------------------NAV BAR----------------------------- */
+
+    header {
+        display: flex;
+        height: 4rem;
+        margin: 1.5rem 2rem;
+    }
+
+    #logo {
+        background: url(./resources/01_Logo_Brand_RockStartTech_Colour_White_Asset_MW_P1_v1-12.svg);
+        background-size: 20rem;
+        background-repeat: no-repeat;
+    }
+
+    h1 {
+        width: 100%;
+        text-indent: -8000px;
+        overflow: hidden;
+    }
+
+    #menu {
+        display: flex;
+        justify-content: flex-end;
+        position: inherit;
+    }
+
+    #burger {
         display: none;
     }
-    .navbar-right{
-        display: none;
+
+    #bar {
+        display: flex;
+        list-style: none;
+        background: none;
+        height: 100%;
+    }
+
+    nav {
+        align-self: center;
+    }
+
+    nav ul li {
+        width: 10rem;
+    }
+
+    nav ul li a {
+        color: var(--neutral-white);
+        text-decoration: none;
+    }
+
+    #bar li a {
+        font-size: var(--wv);
+        padding: 0;
     }
 }
