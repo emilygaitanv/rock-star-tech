@@ -7,57 +7,200 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" href="./stylesheets/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./stylesheets/fotorama.css">
     <title>Rock Start Tech</title>
 </head>
 <body>
-    <nav>
-        <img src="./Resources/icon-menu-28px.svg" alt="menu" class="menu">
-
-        <div class="navbar-left">
-            <img src="./Resources/Logo-P-42px.svg" alt="logo" class="logo">
-        </div>
-
-        <div class="navbar-right">
-            <ul>
-                <li>
-                    <a href="/">Blog</a>
-                </li>
-
-                <li>
-                    <a href="/">Eventos</a>
-                </li>
-
-                <li>
-                    <a href="/">Contactanos</a>
-                </li>
+    <header>
+        <h1 id="logo">Rock Start Tech</h1>
+        <nav id="menu">
+            <ul id="burger">
+                <li><a href="#menu" id="open">Abrir</a></li>
+                <li><a href="#" id="close">Cerrar</a></li>
             </ul>
-        </div>
-    </nav>
+            <ul id="bar">
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#eventos">Eventos</a></li>
+              <li><a href="#contactanos">Contactanos</a></li>
+          </ul>
+      </nav>
+  </header>
 
-    <div class="container-slider">
-        <ul class="slider">
-          <li id="slide1">
-            <img src="./Resources/01_section_carrusel.svg" alt="primer encuentro">
-          </li>
-          <li id="slide2">
-            <img src="./Resources/02_section_carrusel.svg" alt="segundo encuentro">
-          </li>
-          <li id="slide3">
-            <img src="" alt="">
-          </li>
-        </ul>
-        
-        <ul class="slider-menu">
-          <li>
-            <a href="#slide1"></a>
-          </li>
-          <li>
-            <a href="#slide2"></a>
-          </li>
-           <li>
-            <a href="#slide3"></a>
-          </li>
-        </ul>
-      </div>
+   <!-- ------------------------------------ GALERIA PARA USAR MAS TARDE
+    <section>
+        <figure id="galeria">
+
+            <a href="./resources/01_section_carrusel_web.jpg"
+                data-fancybox="galeria"
+                data-scrset="resources/01_section_carrusel_m.jpg 576w, resources/01_section_carrusel_t.jpg 991w, resources/01_section_carrusel_web.jpg 1600w">
+                <img src="./resources/01_section_carrusel_m.jpg" alt="Próximo Encuentro">
+            </a>
+
+            <a href="resources/02_section_carousel_web.jpg"
+                data-fancybox="galeria"
+                data-scrset="resources/02_section_carousel_m.jpg 576w, resources/02_section_carousel_t.jpg 991w, resources/02_section_carousel_web.jpg 1600w">
+                <img src="resources/02_section_carousel_m.jpg" alt="Mundo Tech">
+            </a>
+        </figure>
+    </section>
+  ------------------------------------ -->
+
+  <section id="sec-carrusel">
+    <figure class="fotorama"
+            data-width="100%"
+            data-ratio="1000/396"
+            data-transitionduration="500"
+            data-autoplay="true"
+            data-transition="crossfade">
+
+        <picture>
+            <source media="(max-width: 576px)" srcset="resources/01_section_carrusel_m.jpg">
+            <source media="(max-width: 991px)" srcset="resources/01_section_carrusel_t.jpg">
+            <img src="resources/01_section_carrusel_web.jpg" alt="Próximo Encuentro">
+        </picture>
+
+        <picture>
+            <source media="(max-width: 576px)" srcset="resources/02_section_carousel_m.jpg">
+            <source media="(max-width: 991px)" srcset="resources/02_section_carousel_t.jpg">
+            <img src="resources/02_section_carousel_web.jpg" alt="Mundo Tech">
+        </picture>
+
+    </figure>
+  </section>
+
+  <main>
+    <section id="sec-01">
+        <h2>¿Quienes Somos?</h2>
+        <article class="sec-mision">
+            <figure>
+                <picture>
+                    <source media="(min-width: 576px)" srcset="img/mision_m.png">
+                    <source media="(min-width: 991px)" srcset="img/mision_t.png">
+                    <img src="./img/mision_web.png" alt="Misión">
+                </picture>
+            </figure>
+            <div class="mision">
+                <h3>Misión</h3>
+                <p>Impulsar la colaboración y el aprendizaje en tecnología, creando una comunidad activa y compartiendo conocimientos.</p>
+            </div>
+        </article>
+
+        <article class="sec-vision">
+            <figure>
+                <picture>
+                    <source media="(min-width: 576px)" srcset="img/vision_m.png">
+                    <source media="(min-width: 991px)" srcset="img/vision_t.png">
+                    <img src="./img/vision_web.png" alt="Visión">
+                </picture>
+            </figure>
+            <div class="vision">
+                <h3>Visión</h3>
+                <p>Convertirnos en el epicentro global de la comunidad tecnológica, liderando la innovación y la colaboración continua.</p>
+            </div>
+        </article>
+
+        <article class="sec-valores">
+            <figure>
+                <picture>
+                    <source media="(min-width: 576px)" srcset="img/valores_m.png">
+                    <source media="(min-width: 991px)" srcset="img/valores_t.png">
+                    <img src="img/valores_web.png" alt="Valores">
+                </picture>
+            </figure>
+            <div class="valores">
+                <h3>Valores</h3>
+                <p>Colaboración activa, diversidad, aprendizaje constante, innovación y apoyo solidario definen nuestra comunidad.</p>
+            </div>
+        </article>
+
+        <article class="sec-objetivos">
+            <figure>
+                <picture>
+                    <source media="(min-width: 576px)" srcset="img/objetivos_m.png">
+                    <source media="(min-width: 991px)" srcset="img/objetivos_t.png">
+                    <img src="img/objetivos_web.png" alt="objetivos">
+                </picture>
+            </figure>
+            <div class="objetivos">
+                <h3>Objetivos</h3>
+                <p>Facilitar el aprendizaje, crear contenido destacado, organizar eventos inspiradores, conectar a profesionales y contribuir al avance tecnológico global.</p>
+            </div>
+        </article>
+    </section>
+
+    <section id="sec-02">
+        <article id="team" class="Container-team">
+
+            <figure class="team-profile">
+                <source media="(min-width: 576px)" srcset="img/n_e_emi_web.png">
+                <source media="(min-width: 991px)" srcset="img/n_e_emi_t_m.png">
+                <img src="./img/n_e_emi_web.png" alt="Emily Gaitan">
+            </figure>
+
+            <h3 class="team">Emily Gaitan</h3>
+            <p class="title-team"></p>
+
+        </article>
+
+        <article id="team" class="Container-team">
+
+            <figure class="team-profile">
+                <source media="(min-width: 576px)" srcset="img/n_e_kia_web.png">
+                <source media="(min-width: 991px)" srcset="img/n_e_kia_t_m.png">
+                <img src="./img/n_e_kia_web.png" alt="Kiara Del Corro">
+            </figure>
+
+            <h3 class="team">Kiara del Corro</h3>
+            <p class="title-team"></p>
+
+        </article>
+
+        <article id="team" class="Container-team">
+
+            <figure class="team-profile">
+                <source media="(min-width: 576px)" srcset="img/n_e_ser_web.png">
+                <source media="(min-width: 991px)" srcset="img/n_e_ser_t_m.png">
+                <img src="./img/n_e_ser_web.png" alt="Sergio Cast">
+            </figure>
+
+            <h3 class="team">Sergio Cast</h3>
+            <p class="title-team"></p>
+
+        </article>
+
+        <article id="team" class="Container-team">
+
+            <figure class="team-profile">
+                <source media="(min-width: 576px)" srcset="img/n_e_pau_web.png">
+                <source media="(min-width: 991px)" srcset="img/n_e_pau_t_m.png">
+                <img src="./img/n_e_pau_web.png" alt="Paul Frech">
+            </figure>
+
+            <h3 class="team">Paul French</h3>
+            <p class="title-team"></p>
+
+        </article>
+    </section>
+
+    <section>
+        <h2 id="title_03"></h2>
+        <div id="galeria">
+            <a href=""
+                data-fancybox="galeria"
+                data-scrset="">
+                <img src="" alt="">
+            </a>
+        </div>
+    </section>
+
+</main>
+
+ <!-- ------------------------------------JS SHEETS------------------------------------ -->
+
+ <script src="js/jquery-3.6.0.min.js"></script>
+ <script src="js/jquery.fancybox.min.js"></script>
+ <script src="js/fotorama.js"></script>
+
 </body>
 </html>
