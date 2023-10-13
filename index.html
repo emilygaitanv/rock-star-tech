@@ -55,6 +55,11 @@
             data-transition="crossfade">
 
         <picture>
+            <div class="car-info">
+                <p class="car-title">NO TE PIERDAS</p>
+                <P class="car-subtitle">El próximo encuentro</P>
+                <p>18/12/2023</p>
+            </div>
             <source media="(max-width: 576px)" srcset="resources/01_section_carrusel_m.jpg">
             <source media="(max-width: 991px)" srcset="resources/01_section_carrusel_t.jpg">
             <img src="resources/01_section_carrusel_web.jpg" alt="Próximo Encuentro">
@@ -64,6 +69,8 @@
             <source media="(max-width: 576px)" srcset="resources/02_section_carousel_m.jpg">
             <source media="(max-width: 991px)" srcset="resources/02_section_carousel_t.jpg">
             <img src="resources/02_section_carousel_web.jpg" alt="Mundo Tech">
+            <p class="car-title">Mundo Tech</p>
+            <p class="car-subtitle">Compartí tus conocimientos con la comunidad</p>
         </picture>
 
     </figure>
@@ -75,8 +82,8 @@
         <article class="sec-mision">
             <figure>
                 <picture>
-                    <source media="(min-width: 576px)" srcset="img/mision_m.png">
-                    <source media="(min-width: 991px)" srcset="img/mision_t.png">
+                    <source media="(max-width: 576px)" srcset="img/mision_m.png">
+                    <source media="(max-width: 991px)" srcset="img/mision_t.png">
                     <img src="./img/mision_web.png" alt="Misión">
                 </picture>
             </figure>
@@ -89,8 +96,8 @@
         <article class="sec-vision">
             <figure>
                 <picture>
-                    <source media="(min-width: 576px)" srcset="img/vision_m.png">
-                    <source media="(min-width: 991px)" srcset="img/vision_t.png">
+                    <source media="(max-width: 576px)" srcset="img/vision_m.png">
+                    <source media="(max-width: 991px)" srcset="img/vision_t.png">
                     <img src="./img/vision_web.png" alt="Visión">
                 </picture>
             </figure>
@@ -103,8 +110,8 @@
         <article class="sec-valores">
             <figure>
                 <picture>
-                    <source media="(min-width: 576px)" srcset="img/valores_m.png">
-                    <source media="(min-width: 991px)" srcset="img/valores_t.png">
+                    <source media="(max-width: 576px)" srcset="img/valores_m.png">
+                    <source media="(max-width: 991px)" srcset="img/valores_t.png">
                     <img src="img/valores_web.png" alt="Valores">
                 </picture>
             </figure>
@@ -117,9 +124,9 @@
         <article class="sec-objetivos">
             <figure>
                 <picture>
-                    <source media="(min-width: 576px)" srcset="img/objetivos_m.png">
-                    <source media="(min-width: 991px)" srcset="img/objetivos_t.png">
-                    <img src="img/objetivos_web.png" alt="objetivos">
+                    <source media="(max-width: 576px)" srcset="img/objetivos_m.png">
+                    <source media="(max-width: 991px)" srcset="img/objetivos_t.png">
+                    <img src="./img/objetivos-web.png" alt="objetivos">
                 </picture>
             </figure>
             <div class="objetivos">
@@ -130,68 +137,63 @@
     </section>
 
     <section id="sec-02">
-        <article id="team" class="Container-team">
 
-            <figure class="team-profile">
-                <source media="(min-width: 576px)" srcset="img/n_e_emi_web.png">
-                <source media="(min-width: 991px)" srcset="img/n_e_emi_t_m.png">
-                <img src="./img/n_e_emi_web.png" alt="Emily Gaitan">
-            </figure>
+        <h2>Nuestro Equipo</h2>
 
-            <h3 class="team">Emily Gaitan</h3>
-            <p class="title-team"></p>
+        <article id="our-team-container">
 
+            <div class="team-01">
+                <picture>
+                    <figure>
+                        <source media="(max-width: 576px)" srcset="img/n_e_emi_web.png">
+                        <source media="(max-width: 991px)" srcset="img/n_e_emi_t_m.png">
+                        <img src="./img/n_e_emi_web.png" alt="Emily Gaitan">
+                        <div class="info-emi">
+                            <h3>Emily Gaitan</h3>
+                            <p>Graphic Designer</p>
+                        </div>
+                    </figure>
+                </picture>
+    
+                <picture>
+                    <figure>
+                        <source media="(min-width: 576px)" srcset="img/n_e_kia_web.png">
+                        <source media="(min-width: 991px)" srcset="img/n_e_kia_t_m.png">
+                        <img src="./img/n_e_kia_web.png" alt="Kiara Del Corro">
+                        <div class="info-kia">
+                            <h3>Kiara del Corro</h3>
+                            <p>Web Designer</p>
+                        </div>
+                    </figure>
+                </picture>
+            </div>
+
+            <div class="team-02">
+                <picture>
+                    <figure>
+                        <source media="(min-width: 576px)" srcset="img/n_e_ser_web.png">
+                        <source media="(min-width: 991px)" srcset="img/n_e_ser_t_m.png">
+                        <img src="./img/n_e_ser_web.png" alt="Sergio Cast">
+                        <div class="info-sergio">
+                            <h3 class="team">Sergio Cast</h3>
+                            <p class="title-team">CEO</p>
+                        </div>
+                    </figure>
+                </picture>
+    
+                <figure>
+                    <picture>
+                        <source media="(min-width: 576px)" srcset="img/n_e_pau_web.png">
+                        <source media="(min-width: 991px)" srcset="img/n_e_pau_t_m.png">
+                        <img src="./img/n_e_pau_web.png" alt="Paul Frech">
+                        <div class="info-paul">
+                            <h3 class="team">Paul French</h3>
+                            <p class="title-team">Developer</p>
+                        </div>
+                    </picture>
+                </figure>
+            </div>
         </article>
-
-        <article id="team" class="Container-team">
-
-            <figure class="team-profile">
-                <source media="(min-width: 576px)" srcset="img/n_e_kia_web.png">
-                <source media="(min-width: 991px)" srcset="img/n_e_kia_t_m.png">
-                <img src="./img/n_e_kia_web.png" alt="Kiara Del Corro">
-            </figure>
-
-            <h3 class="team">Kiara del Corro</h3>
-            <p class="title-team"></p>
-
-        </article>
-
-        <article id="team" class="Container-team">
-
-            <figure class="team-profile">
-                <source media="(min-width: 576px)" srcset="img/n_e_ser_web.png">
-                <source media="(min-width: 991px)" srcset="img/n_e_ser_t_m.png">
-                <img src="./img/n_e_ser_web.png" alt="Sergio Cast">
-            </figure>
-
-            <h3 class="team">Sergio Cast</h3>
-            <p class="title-team"></p>
-
-        </article>
-
-        <article id="team" class="Container-team">
-
-            <figure class="team-profile">
-                <source media="(min-width: 576px)" srcset="img/n_e_pau_web.png">
-                <source media="(min-width: 991px)" srcset="img/n_e_pau_t_m.png">
-                <img src="./img/n_e_pau_web.png" alt="Paul Frech">
-            </figure>
-
-            <h3 class="team">Paul French</h3>
-            <p class="title-team"></p>
-
-        </article>
-    </section>
-
-    <section>
-        <h2 id="title_03"></h2>
-        <div id="galeria">
-            <a href=""
-                data-fancybox="galeria"
-                data-scrset="">
-                <img src="" alt="">
-            </a>
-        </div>
     </section>
 
 </main>
