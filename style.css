@@ -308,8 +308,8 @@ nav:target #burger li:last-child {
     top: 0;
     text-align: center;
     padding: 20px;
-    background-color: var(--neutral-dark-mode);
-    border: 1px solid #ddd;
+    border-radius: 10%;
+    background-color: var(--neutral-70);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     max-width: 65vw;
     display: none;
@@ -320,8 +320,9 @@ nav:target #burger li:last-child {
     height: auto;
 }
 
-h3, p {
-    margin: 10px 0;
+.carousel-item h3, p {
+    margin: 1rem 0;
+    text-align: left;
 }
 
 .carousel-item.active {
@@ -335,7 +336,11 @@ h3, p {
 .carrusel-container {
     display: flex;
     justify-content: center;
-    margin-top: 65vw;
+    margin: 40vh 0 2rem 0;
+}
+
+.carrusel_tag {
+    margin: 5rem 0 0 0;
 }
 
 .carrusel_tag li {
@@ -359,6 +364,7 @@ h3, p {
 
 .carousel-item figure picture img {
     border-radius: 6%;
+    max-height: 30vh;
 }
 
 .carousel-item:target {
