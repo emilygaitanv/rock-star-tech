@@ -121,18 +121,18 @@ nav:target #burger li:last-child {
 
 /* ------------------------------------HERO SECTION----------------------------- */
 
-#sec-carrusel{
+#sec-carrusel {
     position: relative;
     display: flex;
 }
 
-#sec-carrusel img{
+#sec-carrusel img {
     position: relative;
     width: 100%;
     height: 700px;
 }
 
-.car-info{
+.car-info {
     font-size: var(--dl);
     font-weight: 700;
     position: absolute;
@@ -162,12 +162,12 @@ nav:target #burger li:last-child {
     text-align: center;
 }
 
-.mision, .valores{
+.mision, .valores {
     width: 30.625rem;
     text-align: left;
 }
 
-.vision, .objetivos{
+.vision, .objetivos {
     width: 30.625rem;
     text-align: right;
 }
@@ -197,13 +197,13 @@ nav:target #burger li:last-child {
 
 /* ------------------------------------NUESTRO EQUIPO----------------------------- */
 
-#sec-02{
+#sec-02 {
     position: relative;
     margin: 5rem 18.75rem 5rem 18.75rem;
     gap: 1.25rem;
 }
 
-#our-team-container{
+#our-team-container {
     display: flex;
     justify-content: center;
     align-items: baseline;
@@ -211,7 +211,7 @@ nav:target #burger li:last-child {
     gap: 3.125rem;
 }
 
-#sec-02 h2{
+#sec-02 h2 {
     display: flex;
     justify-content: flex-end;
     font-size: var(--dl);
@@ -222,7 +222,7 @@ nav:target #burger li:last-child {
 
 }
 
-.team-01{
+.team-01 {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -230,7 +230,7 @@ nav:target #burger li:last-child {
     gap: 3.125rem;
 }
 
-.info-emi{
+.info-emi {
     position: absolute;
     bottom: 20rem;
     right: 16rem;
@@ -239,7 +239,7 @@ nav:target #burger li:last-child {
     align-items: flex-end;
 }
 
-.info-kia{
+.info-kia {
     position: absolute;
     bottom: 4rem;
     right: 12rem;
@@ -248,17 +248,17 @@ nav:target #burger li:last-child {
     align-items: flex-end;
 }
 
-.team-01 h3{
+.team-01 h3 {
     font-size: var(--tl);
 }
 
-.team-01 p{
+.team-01 p {
     font-size: var(--ts);
 }
 
 /*-----------TEAM 02-----------*/
 
-.team-02{
+.team-02 {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -266,25 +266,117 @@ nav:target #burger li:last-child {
     gap: 3.125rem;
 }
 
-.info-sergio{
+.info-sergio {
     position: absolute;
     bottom: 22rem;
     right: 9rem;
 }
 
-.info-paul{
+.info-paul {
     position: absolute;
     bottom: 6rem;
     right: 6rem;
 }
 
-.team-02 h3{
+.team-02 h3 {
     font-size: var(--tl);
 }
 
-.team-02 p{
+.team-02 p {
     font-size: var(--ts);
 }
+
+/* ------------------------------------BLOGS----------------------------- */
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--neutral-dark-mode);
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    max-width: 65vw;
+    display: none;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+h3, p {
+    margin: 10px 0;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.carousel-item:first-child {
+    display: block;
+}
+
+.carrusel-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 65vw;
+}
+
+.carrusel_tag li {
+    list-style: none;
+	width: 1rem;
+	display: inline-block;
+	margin: 1rem 1rem;
+}
+
+#b1, #b2, #b3 {
+    border: 1px solid var(--neutral-white);
+}
+
+.carrusel_tag li a {
+    display: block;
+	height: 1rem;
+	border-radius: 50%;
+	text-indent: -300px;
+	overflow: hidden;
+}
+
+.carousel-item figure picture img {
+    border-radius: 6%;
+}
+
+.carousel-item:target {
+    display: block;
+}
+
+.anchor-tag {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background-color: var(--secondary-banana-yellow);
+    color: var(--neutral-dark-mode);
+    padding: 0.3rem 0.4rem;
+    border-radius: 15%;
+    box-shadow: 0px 2px 4px var(--neutral-70);
+    border: none;
+}
+
 
 /* ------------------------------------TABLET VIEW----------------------------- */
 
