@@ -14,6 +14,7 @@
     --secondary-caribbean-green: #04DC9B;
     --secondary-french-fucsia: #FF4298;
     --primary-lavander-indigo: #8D4EEB;
+    --expand-dark-mode: #221052;
     --dl: 47.78px;
     --dm: 39.8px;
     --ds: 33.3px;
@@ -122,17 +123,14 @@ nav:target #burger li:last-child {
 /* ------------------------------------HERO SECTION----------------------------- */
 
 #sec-carrusel {
-    position: relative;
-    display: flex;
+    width: 100%;
 }
 
 #sec-carrusel img {
-    position: relative;
     width: 100%;
-    height: 700px;
 }
 
-.car-info {
+/* .car-info {
     font-size: var(--dl);
     font-weight: 700;
     position: absolute;
@@ -141,7 +139,11 @@ nav:target #burger li:last-child {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+} */
+
+
 
 /* ------------------------------------QUIENES SOMOS----------------------------- */
 
@@ -559,6 +561,83 @@ nav:target #burger li:last-child {
     transform: scale(0.98);
 }
 
+
+/* ------------------------------------FOOTER SECTION----------------------------- */
+
+footer {
+    background: var(--neutral-70);
+}
+
+#footer {
+	color: var(--neutral-white);
+    width: 75vw;
+    margin: 0 auto;
+    text-align: center;
+	padding: 3rem 0 5rem 0;
+}
+
+#logo-footer {
+    background-image: url(./resources/01_Logo_Brand_RockStartTech_Colour_White_Asset_MW_P1_v1-12.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#footer .col-1, #footer .col-2, #footer .col-3 {
+    text-align: left;
+}
+
+#footer .col-1, #footer .col-2, #footer .col-3, #footer .col-4 {
+    margin: 2rem 0 0 0;
+}
+
+#footer .column-heading {
+	margin: 0 0 2rem 0;
+	text-transform: uppercase;
+	line-height: 1.5em;
+}
+
+#footer ul li {
+	border-radius: 4px;
+    list-style: none;
+}
+
+#footer ul li:hover {
+	background-color: var(--primary-lavander-indigo);
+}
+
+#footer ul li:hover a {
+	color: var(--primary-color);
+}
+#footer ul li a {
+	display: inline-block;
+	width: 100%;
+    color: var(--neutral-white);
+	padding: 0.5rem;
+}
+#footer .col-4 ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+#footer .col-4 ul li a {
+    width: calc(75vw / 4);
+    height: calc(75vw/4);
+	text-indent: -30000px;
+    overflow: hidden;
+    background-image: url(./resources/01_Logo_Brand_RockStartTech_Asset_MW_P1_v1-08.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0 1rem;
+}
+
+#copyright {
+	padding: 1rem 0;
+	background-color: var(--expand-dark-mode);
+}
+#copyright p {
+	margin: 1rem;
+}
 
 /* ------------------------------------TABLET VIEW----------------------------- */
 
