@@ -801,6 +801,7 @@ footer {
     #footer .col-4 ul {
         justify-content: space-evenly;
         border-top: 1px solid #ffffff;
+        padding-top: 1rem;
     }
 
     #footer ul li a {
