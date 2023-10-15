@@ -181,57 +181,60 @@
 
     <section class="blog-container" id="blog">
         <h2>Blogs de la Comunidad</h2>
-        <article class="blog-item" id="slide1">
-            <a href="#">
-                <button class="blog-button" id="cripto">Cripto</button>
-                <figure>
-                    <picture>
-                        <source media="(min-width: )" srcset="">
-                        <source media="(min-width: )" srcset="">
-                        <img src="img/01_M_Asset_Blog-01_v1.jpg" alt="Imagen 1">
-                    </picture>
-                </figure>
-                <h3>Título 1</h3>
-                <p>Texto breve 1</p>
-            </a>
-        </article>
-
-        <article class="blog-item" id="slide2">
-            <a href="#">
-                <button class="blog-button">Develop</button>
-                <figure>
-                    <picture>
-                        <source media="(min-width: )" srcset="">
-                        <source media="(min-width: )" srcset="">
-                        <img src="img/01_M_Asset_Blog-02_v1.jpg" alt="Imagen 2">
-                    </picture>
-                </figure>
-            <h3>Título 2</h3>
-            <p>Texto breve 2</p>
-            </a>
-        </article>
-
-        <article class="blog-item" id="slide3">
-            <a href="#">
-                <button class="blog-button" id="dev">Developer</button>
-                <figure>
-                    <picture>
-                        <source media="(min-width: )" srcset="">
-                        <source media="(min-width: )" srcset="">
-                        <img src="img/01_M_Asset_Blog-03_v1.jpg" alt="Imagen 3">
-                    </picture>
-                </figure>
-            <h3>Título 3</h3>
-            <p>Texto breve 3</p>
-            </a>
-        </article>
+        <div class="alignment-blog">
+            <article class="blog-item" id="slide1">
+                <a href="#">
+                    <button class="blog-button" id="cripto">Cripto</button>
+                    <figure>
+                        <picture>
+                            <source media="(min-width: )" srcset="">
+                            <source media="(min-width: )" srcset="">
+                            <img src="img/01_M_Asset_Blog-01_v1.jpg" alt="Imagen 1">
+                        </picture>
+                    </figure>
+                    <h3>Título 1</h3>
+                    <p>Texto breve 1</p>
+                </a>
+            </article>
+    
+            <article class="blog-item" id="slide2">
+                <a href="#">
+                    <button class="blog-button" id="ux">UX/UI</button>
+                    <figure>
+                        <picture>
+                            <source media="(min-width: )" srcset="">
+                            <source media="(min-width: )" srcset="">
+                            <img src="img/01_M_Asset_Blog-02_v1.jpg" alt="Imagen 2">
+                        </picture>
+                    </figure>
+                <h3>Título 2</h3>
+                <p>Texto breve 2</p>
+                </a>
+            </article>
+    
+            <article class="blog-item" id="slide3">
+                <a href="#">
+                    <button class="blog-button" id="dev">Developer</button>
+                    <figure>
+                        <picture>
+                            <source media="(min-width: )" srcset="">
+                            <source media="(min-width: )" srcset="">
+                            <img src="img/01_M_Asset_Blog-03_v1.jpg" alt="Imagen 3">
+                        </picture>
+                    </figure>
+                <h3>Título 3</h3>
+                <p>Texto breve 3</p>
+                </a>
+            </article>
+        </div>
     </section>
 
     <!-- ------------------------------------EVENTOS SECTION------------------------------------ -->
 
     <section class="eventos-container" id="eventos">
         <h2>Próximos Eventos</h2>
-        <article class="eventos-item" id="slide1">
+        <div class="alignment-eventos">
+            <article class="eventos-item" id="slide1">
                 <figure>
                     <picture>
                         <source media="(min-width: )" srcset="">
@@ -242,9 +245,9 @@
                 <h3>Título 1</h3>
                 <p>Texto breve 1</p>
                 <button class="eventos-button">Registrate</button>
-        </article>
+            </article>
 
-        <article class="eventos-item" id="slide2">
+            <article class="eventos-item" id="slide2">
                 <figure>
                     <picture>
                         <source media="(min-width: )" srcset="">
@@ -255,9 +258,9 @@
                 <h3>Título 2</h3>
                 <p>Texto breve 2</p>
                 <button class="eventos-button">Registrate</button>
-        </article>
+            </article>
 
-        <article class="eventos-item" id="slide3">
+            <article class="eventos-item" id="slide3">
                 <figure>
                     <picture>
                         <source media="(min-width: )" srcset="">
@@ -268,10 +271,11 @@
                 <h3>Título 3</h3>
                 <p>Texto breve 3</p>
                 <button class="eventos-button">Registrate</button>
-        </article>
+            </article>
+        </div>
     </section>
 
-    <!-- ------------------------------------VIDEO NUESTROS ENCUENTROS------------------------------------ -->
+    <!-- ------------------------------------VIDEO SECTION------------------------------------ -->
 
     <section id="sec-06">
         <h2>Conocé Nuestros Encuentros</h2>
@@ -328,7 +332,7 @@
         <article class="container" id="contact">
             <div class="wrapper">
                 <div class="left">
-                    <h2>Escribinos tu consulta</h2>
+                    <h2 class="contact-heading">Escribinos tu consulta</h2>
                     <p class="contact-desc">Contame tus ideas y projectos, juntos las haremos realidad a nivel digital poniendo la creatividad y el diseño como eje principal.
                 </div>
 
@@ -376,7 +380,7 @@
                 <img src="img/01_T_Asset_Blog-03_v1.jpg" alt="">
             </picture>
         </figure>
-        <h2 id="head-unite">¡Unite a nuestro equipo!</h2>
+        <h2 class="contact-heading" id="head-unite">¡Unite a nuestro equipo!</h2>
         <p class="contact-desc">Contame tus ideas y projectos, juntos las haremos realidad a nivel digital poniendo la creatividad y el diseño como eje principal.</p>
         <button class="contacto-button">Envianos tu CV</button>
     </article>
