@@ -288,101 +288,120 @@ nav:target #burger li:last-child {
 
 /* ------------------------------------BLOGS----------------------------- */
 
-.carousel-container {
+.blog-container,.eventos-container {
     position: relative;
     width: 100%;
-    margin: 0 auto;
-}
-
-.carousel {
-    position: relative;
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.carousel-item {
-    position: absolute;
-    top: 0;
-    text-align: center;
-    padding: 20px;
-    border-radius: 10%;
-    background-color: var(--neutral-70);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     max-width: 65vw;
-    display: none;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.carousel-item img {
-    max-width: 100%;
-    height: auto;
-}
-
-.carousel-item h3, p {
-    margin: 1rem 0;
+.blog-container .blog-item, .eventos-container .eventos-item {
+    padding: 1.5rem;
+    background-color: var(--neutral-70);
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    margin: 3rem 0;
     text-align: left;
 }
 
-.carousel-item.active {
-    display: block;
+.blog-item a {
+    text-decoration: none;
+    color: var(--neutral-white);
 }
 
-.carousel-item:first-child {
-    display: block;
+.blog-container .blog-item img {
+    width: 100%;
+    border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
 }
 
-.carrusel-container {
-    display: flex;
-    justify-content: center;
-    margin: 40vh 0 2rem 0;
+.blog-item h3 {
+    padding: 1rem 0 0.8rem 0;
 }
 
-.carrusel_tag {
-    margin: 5rem 0 0 0;
-}
-
-.carrusel_tag li {
-    list-style: none;
-	width: 1rem;
-	display: inline-block;
-	margin: 1rem 1rem;
-}
-
-#b1, #b2, #b3 {
-    border: 1px solid var(--neutral-white);
-}
-
-.carrusel_tag li a {
-    display: block;
-	height: 1rem;
-	border-radius: 50%;
-	text-indent: -300px;
-	overflow: hidden;
-}
-
-.carousel-item figure picture img {
-    border-radius: 6%;
-    max-height: 30vh;
-}
-
-.carousel-item:target {
-    display: block;
-}
-
-.anchor-tag {
+.blog-item .blog-button {
     position: absolute;
-    top: 1.5rem;
+    top: calc(1.5rem+2rem);
     right: 1.5rem;
     background-color: var(--secondary-banana-yellow);
-    color: var(--neutral-dark-mode);
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
     padding: 0.3rem 0.4rem;
-    border-radius: 15%;
-    box-shadow: 0px 2px 4px var(--neutral-70);
     border: none;
 }
 
+.eventos-container .eventos-item img {
+    width: 100%;
+}
+
+.eventos-item h3 {
+    margin: 1.3rem 0 1.4rem 0;
+}
+
+.eventos-item p {
+    margin: 0 0 1.4rem 0;
+}
+
+.eventos-item .eventos-button {
+    width: 100%;
+    padding: 1rem 0;
+    border: 2px solid var(--secondary-caribbean-green);
+    background: none;
+    color: var(--secondary-caribbean-green);
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+}
+
+.eventos-item:hover {
+    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+}
+
+.eventos-item .eventos-button:hover {
+    background: var(--secondary-caribbean-green);
+    color: var(--neutral-white);
+    font-weight: bold;
+    border: 2px solid var(--neutral-white);
+    cursor: pointer;
+}
+
+.blog-item:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    border: 2px solid var(--neutral-dark-mode);
+    box-shadow: 0px 0px 31px 0px rgba(141,78,235,0.35);
+    -webkit-box-shadow: 0px 0px 31px 0px rgba(141,78,235,0.35);
+    -moz-box-shadow: 0px 0px 31px 0px rgba(141,78,235,0.35);
+}
+
+/* ------------------------------------NUESTROS ENCUENTROS----------------------------- */
+
+#sec-06 {
+    position: relative;
+    width: 100%;
+    max-width: 65vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#sec-06 .sec-video iframe {
+    max-width: 100%;
+    margin: 3rem 0;
+    border: none;
+    border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    box-shadow: 0px 0px 31px 0px rgba(141,78,235,0.35);
+    -webkit-box-shadow: 0px 0px 31px 0px rgba(141,78,235,0.35);
+    -moz-box-shadow: 0px 0px 31px 0px rgba(141,78,235,0.35);
+}
 
 /* ------------------------------------TABLET VIEW----------------------------- */
 

@@ -198,10 +198,11 @@
 
     <!-- ------------------------------------BLOG DE LA COMUNIDAD------------------------------------ -->
 
-    <section class="carousel-container">
-        <article class="carousel">
-            <div class="carousel-item" id="blog01">
-                <button class="anchor-tag">UX/UI</button>
+    <section class="blog-container">
+        <h2>Blogs de la Comunidad</h2>
+        <article class="blog-item" id="slide1">
+            <a href="#">
+                <button class="blog-button">UX/UI</button>
                 <figure>
                     <picture>
                         <source media="(min-width: )" srcset="">
@@ -211,9 +212,58 @@
                 </figure>
                 <h3>Título 1</h3>
                 <p>Texto breve 1</p>
-            </div>
-            <div class="carousel-item" id="blog02">
-                <button class="anchor-tag">UX/UI</button>
+            </a>
+        </article>
+
+        <article class="blog-item" id="slide2">
+            <a href="#">
+                <button class="blog-button">UX/UI</button>
+                <figure>
+                    <picture>
+                        <source media="(min-width: )" srcset="">
+                        <source media="(min-width: )" srcset="">
+                        <img src="img/01_M_Asset_Blog-02_v1.jpg" alt="Imagen 2">
+                    </picture>
+                </figure>
+            <h3>Título 2</h3>
+            <p>Texto breve 2</p>
+            </a>
+        </article>
+
+        <article class="blog-item" id="slide3">
+            <a href="#">
+                <button class="blog-button">UX/UI</button>
+                <figure>
+                    <picture>
+                        <source media="(min-width: )" srcset="">
+                        <source media="(min-width: )" srcset="">
+                        <img src="img/01_M_Asset_Blog-03_v1.jpg" alt="Imagen 3">
+                    </picture>
+                </figure>
+            <h3>Título 3</h3>
+            <p>Texto breve 3</p>
+            </a>
+        </article>
+    </section>
+
+    <!-- ------------------------------------EVENTOS SECTION------------------------------------ -->
+
+    <section class="eventos-container">
+        <h2>Próximos Eventos</h2>
+        <article class="eventos-item" id="slide1">
+                <figure>
+                    <picture>
+                        <source media="(min-width: )" srcset="">
+                        <source media="(min-width: )" srcset="">
+                        <img src="img/01_M_Asset_Blog-01_v1.jpg" alt="Imagen 1">
+                    </picture>
+                </figure>
+                <h3>Título 1</h3>
+                <p>Texto breve 1</p>
+                <button class="eventos-button">Registrate</button>
+        </article>
+
+        <article class="eventos-item" id="slide2">
                 <figure>
                     <picture>
                         <source media="(min-width: )" srcset="">
@@ -223,9 +273,10 @@
                 </figure>
                 <h3>Título 2</h3>
                 <p>Texto breve 2</p>
-            </div>
-            <div class="carousel-item" id="blog03">
-                <button class="anchor-tag">UX/UI</button>
+                <button class="eventos-button">Registrate</button>
+        </article>
+
+        <article class="eventos-item" id="slide3">
                 <figure>
                     <picture>
                         <source media="(min-width: )" srcset="">
@@ -233,17 +284,37 @@
                         <img src="img/01_M_Asset_Blog-03_v1.jpg" alt="Imagen 3">
                     </picture>
                 </figure>
-                <h3>¿Cómo vivir de la Tecnología?</h3>
-                <p>Esto es un texto largo</p>
-            </div>
+                <h3>Título 3</h3>
+                <p>Texto breve 3</p>
+                <button class="eventos-button">Registrate</button>
         </article>
-        <article class="carrusel-container">
-            <ul class="carrusel_tag">
-                <li><a href="#blog01" id="b1">Blog 01</a></li>
-                <li><a href="#blog02" id="b2">Blog 02</a></li>
-                <li><a href="#blog03" id="b3">Blog 03</a></li>
-            </ul>
+    </section>
+
+    <!-- ------------------------------------VIDEO SECTION------------------------------------ -->
+
+    <section id="sec-06">
+        <h2>Conocé Nuestros Encuentros</h2>
+        <article class="sec-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/d5rJDKt2_Ew?si=GlDDk5wfOizLwY_O" title="YouTube video player" loading="eager" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </article>
+    </section>
+
+    <!-- ------------------------------------GALERIA SECTION------------------------------------ -->
+
+    <section id="sec-galeria">
+        <figure id="galeria">
+            <a href="./resources/01_section_carrusel_web.jpg"
+                data-fancybox="galeria"
+                data-scrset="resources/01_section_carrusel_m.jpg 576w, resources/01_section_carrusel_t.jpg 991w, resources/01_section_carrusel_web.jpg 1600w">
+                <img src="./resources/01_section_carrusel_m.jpg" alt="Próximo Encuentro">
+            </a>
+
+            <a href="resources/02_section_carousel_web.jpg"
+                data-fancybox="galeria"
+                data-scrset="resources/02_section_carousel_m.jpg 576w, resources/02_section_carousel_t.jpg 991w, resources/02_section_carousel_web.jpg 1600w">
+                <img src="resources/02_section_carousel_m.jpg" alt="Mundo Tech">
+            </a>
+        </figure>
     </section>
 
 </main>
