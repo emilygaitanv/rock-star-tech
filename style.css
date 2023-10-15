@@ -678,7 +678,7 @@ footer {
     /* ------------------------------------NAV BAR----------------------------- */
     
     header {
-        margin: 1rem 1.5rem;
+        margin: 20px 0 0 10px;
     }
 
     #logo {
@@ -687,9 +687,130 @@ footer {
         background-repeat: no-repeat;
     }
 
+    #burger li a {
+        padding-bottom: 2.2rem;
+    }
+    
     #burger li {
         display: flex;
         justify-content: flex-end;
+    }
+
+    /* ------------------------------------¿QUIENES SOMOS?----------------------------- */
+
+    #sec-01 {
+        display: grid;
+        justify-content: center;
+        margin: 0 14.5rem 0 14.5rem;
+        gap: 1.25rem;
+    }
+    
+    #sec-01 h2 {
+        text-align: center;
+        font-size: var(--dl);
+        padding: 3.31rem;
+    }
+    
+    #sec-01 article {
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .mision, .valores {
+        width: 30.625rem;
+        text-align: left;
+    }
+    
+    .vision, .objetivos {
+        width: 30.625rem;
+        text-align: right;
+    }
+    
+    .sec-mision, .sec-valores {
+        width: 52.5rem;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        font-size: var(--bl);
+    }
+    
+    .sec-vision, .sec-objetivos {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 30px;
+        font-size: var(--bl);
+    }
+    
+    #sec-01 h3 {
+        font-size: var(--ds);
+        text-transform: uppercase;
+        padding-bottom: 20px;
+    
+    }
+
+    /* ------------------------------------BLOGS DE LA COMUNIDAD----------------------------- */
+
+    .blog-container, .eventos-container{
+        max-width: 85vw;
+    }
+
+    .blog-container .alignment-blog, .eventos-container .alignment-eventos {
+        display: flex;
+    }
+
+    .blog-container .blog-item {
+        width: calc(85vw/3);
+        margin: 3rem 0.5rem 0;
+        padding: 1rem 0.8rem 1.5rem;
+    }
+
+    .eventos-container .eventos-item {
+        width: calc(85vw/3);
+        margin: 3rem 0.5rem 0;
+    }
+
+    .eventos-container .eventos-item p {
+        display: none;
+    }
+
+    .blog-item .blog-button {
+        right: auto;
+    }
+
+    .eventos-item .eventos-button {
+        padding: 0.5rem 0;
+    }
+
+    /* ------------------------------------NAV BAR----------------------------- */
+
+    #footer .col-2, #footer .col-3 {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .col-2 {
+        border-top: 1px solid #ffffff;
+        padding-top: 3rem;
+    }
+
+    .col-2, .col-3 {
+        justify-content: space-between;
+    }
+    
+    #footer .col-4 ul {
+        justify-content: space-evenly;
+        border-top: 1px solid #ffffff;
+        padding-top: 1rem;
+    }
+
+    #footer ul li a {
+        text-decoration: none;
+    }
+
+    #footer .col-4 ul li a {
+        width: calc(35vw / 4);
+        height: calc(35vw/4);
     }
 }
 
