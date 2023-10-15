@@ -34,13 +34,12 @@ body {
 }
 
 header {
-    /* margin: 1rem 1.5rem;
-    position: fixed; */
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
 }
 
 #logo {
     background: url(./resources/Logo-P-42px.svg);
-    background-size: 4rem;
     background-repeat: no-repeat;
     background-position: right;
 }
@@ -66,6 +65,11 @@ h1 {
     background-position: center;
 }
 
+#burger {
+    text-indent: -8000px;
+    overflow: hidden;
+}
+
 #burger li a {
     display: block;
     width: 4rem;
@@ -77,17 +81,11 @@ nav ul {
 }
 
 #menu {
-    flex: 3;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-}
-
-#burger {
-    text-indent: -8000px;
-    overflow: hidden;
-    padding: 0 20px 0 20px;
+    z-index: 1;
 }
 
 #bar {
@@ -150,8 +148,6 @@ nav:target #burger li:last-child {
     transform: translateZ(0);
 } */
 
-
-
 /* ------------------------------------QUIENES SOMOS----------------------------- */
 
 #sec-01 h2 {
@@ -182,10 +178,6 @@ nav:target #burger li:last-child {
     border: 2px solid var(--expand-dark-mode);
 }
 
-#sec-01 article:hover {
-    transform: scale(1.02);
-}
-
 #sec-01 article figure picture img {
     margin: 0 0 1rem 0;
 }
@@ -202,53 +194,36 @@ nav:target #burger li:last-child {
 
 #sec-02 {
     position: relative;
-    margin: 5rem 18.75rem 5rem 18.75rem;
-    gap: 1.25rem;
+    width: 75vw;
+    margin: 12rem auto 0;
+    text-align: center;
 }
 
-#our-team-container {
+.team-item {
     display: flex;
-    justify-content: center;
-    align-items: baseline;
-    display: flex;
-    gap: 3.125rem;
+    align-items: center;
+    text-align: left;
+    gap: 2rem;
+    margin: 1rem 0;
+    padding: 0.62rem 0.62rem;
+    border-radius: 60px 60px 60px 60px;
+    -webkit-border-radius: 60px 60px 60px 60px;
+    -moz-border-radius: 60px 60px 60px 60px;
+    background: linear-gradient(0deg,var(--neutral-70) 0%, var(--neutral-dark-mode) 90%);
+    background: -webkit-linear-gradient(0deg,var(--neutral-70) 0%, var(--neutral-dark-mode) 90%);
+    background: -moz-linear-gradient(0deg,var(--neutral-70) 0%, var(--neutral-dark-mode) 99%);
 }
 
 #sec-02 h2 {
-    display: flex;
-    justify-content: flex-end;
-    font-size: var(--tl);
-    line-height: 4.4375rem;
-    position: absolute;
-    right: 15rem;
-    bottom: 30rem;
-
+    margin-bottom: 3rem;
 }
 
-.team-01 {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 3.125rem;
-}
-
-.info-emi {
-    position: absolute;
-    bottom: 20rem;
-    right: 16rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.info-kia {
-    position: absolute;
-    bottom: 4rem;
-    right: 12rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+.team-item:nth-child(even) {
+    flex-direction: row-reverse;
+    text-align: right;
+    background: linear-gradient(-180deg,var(--neutral-70) 0%, var(--neutral-dark-mode) 90%);
+    background: -webkit-linear-gradient(-180deg,var(--neutral-70) 0%, var(--neutral-dark-mode) 90%);
+    background: -moz-linear-gradient(-180deg,var(--neutral-70) 0%, var(--neutral-dark-mode) 99%);
 }
 
 .team-01 h3 {
@@ -257,28 +232,6 @@ nav:target #burger li:last-child {
 
 .team-01 p {
     font-size: var(--ts);
-}
-
-/*-----------TEAM 02-----------*/
-
-.team-02 {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 3.125rem;
-}
-
-.info-sergio {
-    position: absolute;
-    bottom: 22rem;
-    right: 9rem;
-}
-
-.info-paul {
-    position: absolute;
-    bottom: 6rem;
-    right: 6rem;
 }
 
 .team-02 h3 {
@@ -295,7 +248,7 @@ nav:target #burger li:last-child {
     position: relative;
     width: 100%;
     max-width: 75vw;
-    margin: 0 auto;
+    margin: 12rem auto;
     text-align: center;
 }
 
@@ -342,6 +295,13 @@ nav:target #burger li:last-child {
 }
 
 /*--------------------------- EVENTOS ---------------------------*/
+#cripto {
+    background: var(--secondary-caribbean-green);
+}
+
+#dev {
+    background: var(--secondary-french-fucsia);
+}
 
 .eventos-container .eventos-item img {
     width: 100%;
@@ -400,7 +360,7 @@ nav:target #burger li:last-child {
     position: relative;
     width: 100%;
     max-width: 75vw;
-    margin: 0 auto;
+    margin: 12rem auto 0;
     text-align: center;
 }
 
@@ -426,7 +386,7 @@ nav:target #burger li:last-child {
     position: relative;
     width: 100%;
     max-width: 75vw;
-    margin: 0 auto;
+    margin: 0 auto 7rem;
     text-align: center;
 }
 
@@ -456,11 +416,13 @@ nav:target #burger li:last-child {
     font-size: var(--tl);
     line-height: 2.12rem;
     padding: 0.62rem 0 0.62rem 0;
+    margin-bottom: 1.65rem;
 }
 
 #contact {
     width: 75vw;
     margin: 0 auto;
+    padding: 6rem 0;
 }
 #contact .wrapper {
     flex-direction: column-reverse;
@@ -558,6 +520,17 @@ nav:target #burger li:last-child {
     text-align: center;
 }
 
+#sec-08 #head-unite{
+    font-size: var(--tl);
+    line-height: 2.81rem;
+    margin: 1rem 0 1rem 0;
+}
+
+#sec-08 .contact-desc{
+    font-size: var(--bm);
+    line-height: 1.68rem;
+}
+
 #sec-unite h3, #head-unite, #sec-unite p {
     text-align: left;
 }
@@ -615,6 +588,10 @@ footer {
     margin: 2rem 0 0 0;
 }
 
+#footer .col-2, #footer .col-3 {
+    display: none;
+}
+
 #footer .column-heading {
 	margin: 0 0 2rem 0;
 	text-transform: uppercase;
@@ -661,6 +638,21 @@ footer {
 }
 #copyright p {
 	margin: 1rem;
+}
+
+/* ------------------------------------FIXING----------------------------- */
+
+#sec-01 {
+    margin-top: 4rem;
+}
+
+#sec-03, #sec-04, #sec-05 {
+    margin: 12rem 0;
+}
+
+
+footer {
+    margin: 4rem 0 0;
 }
 
 /* ------------------------------------TABLET VIEW----------------------------- */
@@ -745,34 +737,35 @@ footer {
 
 
     /* ------------------------------------NUESTRO EQUIPO----------------------------- */
+    /* ------------------------------------¿QUIENES SOMOS?----------------------------- */
 
     #sec-01 {
         display: grid;
         justify-content: center;
-        margin: 0 18.75rem 0 18.75rem;
+        margin: 0 14.5rem 0 14.5rem;
         gap: 1.25rem;
     }
-
+    
     #sec-01 h2 {
         text-align: center;
         font-size: var(--dl);
         padding: 3.31rem;
     }
-
+    
     #sec-01 article {
         text-align: center;
     }
-
-    .mision, .valores{
+    
+    .mision, .valores {
         width: 30.625rem;
         text-align: left;
     }
-
-    .vision, .objetivos{
+    
+    .vision, .objetivos {
         width: 30.625rem;
         text-align: right;
     }
-
+    
     .sec-mision, .sec-valores {
         width: 52.5rem;
         display: flex;
@@ -781,6 +774,7 @@ footer {
         font-size: var(--bl);
     }
 
+    
     .sec-vision, .sec-objetivos {
         display: flex;
         flex-direction: row-reverse;
@@ -788,7 +782,7 @@ footer {
         gap: 30px;
         font-size: var(--bl);
     }
-
+    
     #sec-01 h3 {
         font-size: var(--ds);
         text-transform: uppercase;

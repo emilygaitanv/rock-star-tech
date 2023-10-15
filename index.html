@@ -22,7 +22,7 @@
             <ul id="bar">
               <li><a href="#blog">Blog</a></li>
               <li><a href="#eventos">Eventos</a></li>
-              <li><a href="#contactanos">Contactanos</a></li>
+              <li><a href="#sec-07">Contactanos</a></li>
           </ul>
       </nav>
   </header>
@@ -50,6 +50,8 @@
     
         </figure>
     </section>
+
+    <!-- ------------------------------------¿QUIENES SOMOS?------------------------------------ -->
 
     <section id="sec-01">
         <h2><strong>¿Quienes Somos?</strong></h2>
@@ -110,73 +112,78 @@
         </article>
     </section>
 
+    <!-- ------------------------------------NUESTRO EQUIPO------------------------------------ -->
+
     <section id="sec-02">
-
         <h2>Nuestro Equipo</h2>
-
-        <article id="our-team-container">
-
             <div class="team-01">
-                <picture>
+                <article class="team-item">
                     <figure>
-                        <source media="(max-width: 576px)" srcset="img/n_e_emi_web.png">
-                        <source media="(max-width: 991px)" srcset="img/n_e_emi_t_m.png">
-                        <img src="./img/n_e_emi_web.png" alt="Emily Gaitan">
-                        <div class="info-emi">
-                            <h3>Emily Gaitan</h3>
-                            <p><strong>Graphic Designer</strong></p>
-                        </div>
+                        <picture>
+                            <source media="(min-width: 576px)" srcset="./img/03_Platter_Picture_v1.png">
+                            <source media="(min-width: 991px)" srcset="./img/03_Platter_Picture_v1.png">
+                            <img src="./img/03_Platter_Picture_v1.png" alt="Paul Frech">
+                        </picture>
                     </figure>
-                </picture>
-    
-                <picture>
+                    <div class="team-item-text">
+                        <h3>Emily Gaitan</h3>
+                        <p>Graphic Designer</p>
+                    </div>
+                </article>
+
+                <article class="team-item">
                     <figure>
-                        <source media="(min-width: 576px)" srcset="img/n_e_kia_web.png">
-                        <source media="(min-width: 991px)" srcset="img/n_e_kia_t_m.png">
-                        <img src="./img/n_e_kia_web.png" alt="Kiara Del Corro">
-                        <div class="info-kia">
-                            <h3>Kiara del Corro</h3>
-                            <p><strong>Web Designer</strong></p>
-                        </div>
+                        <picture>
+                            <source media="(min-width: 576px)" srcset="./img/01_Platter_Picture_v1.png">
+                            <source media="(min-width: 991px)" srcset="./img/01_Platter_Picture_v1.png">
+                            <img src="./img/01_Platter_Picture_v1.png" alt="Kiara Del Corro">
+                        </picture>
                     </figure>
-                </picture>
+                    <div class="team-item-text">
+                        <h3>Kiara del Corro</h3>
+                        <p>Web Designer</p>
+                    </div>
+                </article>
             </div>
 
             <div class="team-02">
-                <picture>
-                    <figure>
-                        <source media="(min-width: 576px)" srcset="img/n_e_ser_web.png">
-                        <source media="(min-width: 991px)" srcset="img/n_e_ser_t_m.png">
-                        <img src="./img/n_e_ser_web.png" alt="Sergio Cast">
-                        <div class="info-sergio">
-                            <h3 class="team">Sergio Cast</h3>
-                            <p class="title-team">CEO</p>
-                        </div>
-                    </figure>
-                </picture>
-    
-                <figure>
+                <article class="team-item">
                     <picture>
-                        <source media="(min-width: 576px)" srcset="img/n_e_pau_web.png">
-                        <source media="(min-width: 991px)" srcset="img/n_e_pau_t_m.png">
-                        <img src="./img/n_e_pau_web.png" alt="Paul Frech">
-                        <div class="info-paul">
-                            <h3 class="team">Paul French</h3>
-                            <p class="title-team"><strong>Developer</strong></p>
-                        </div>
+                        <figure>
+                            <source media="(min-width: 576px)" srcset="./img/04_Platter_Picture_v1.png">
+                            <source media="(min-width: 991px)" srcset="./img/04_Platter_Picture_v1.png">
+                            <img src="./img/04_Platter_Picture_v1.png" alt="Sergio Cast">
+                        </figure>
                     </picture>
-                </figure>
+                    <div class="team-item-text">
+                        <h3 class="team">Sergio Cast</h3>
+                        <p class="title-team">CEO</p>
+                    </div>
+                </article>
+    
+                <article class="team-item">
+                    <figure>
+                        <picture>
+                            <source media="(max-width: 576px)" srcset="./img/02_Platter_Picture_v1 (1).png">
+                            <source media="(max-width: 991px)" srcset="./img/02_Platter_Picture_v1 (1).png">
+                            <img src="./img/02_Platter_Picture_v1 (1).png" alt="Emily Gaitan">
+                        </picture>
+                    </figure>
+                    <div class="team-item-text">
+                        <h3 class="team">Paul French</h3>
+                        <p class="title-team">Developer</p>
+                    </div>
+                </article>
             </div>
-        </article>
     </section>
 
     <!-- ------------------------------------BLOG DE LA COMUNIDAD------------------------------------ -->
 
-    <section class="blog-container">
+    <section class="blog-container" id="blog">
         <h2>Blogs de la Comunidad</h2>
         <article class="blog-item" id="slide1">
             <a href="#">
-                <button class="blog-button">UX/UI</button>
+                <button class="blog-button" id="cripto">Cripto</button>
                 <figure>
                     <picture>
                         <source media="(min-width: )" srcset="">
@@ -206,7 +213,7 @@
 
         <article class="blog-item" id="slide3">
             <a href="#">
-                <button class="blog-button">Crypto</button>
+                <button class="blog-button" id="dev">Developer</button>
                 <figure>
                     <picture>
                         <source media="(min-width: )" srcset="">
@@ -222,7 +229,7 @@
 
     <!-- ------------------------------------EVENTOS SECTION------------------------------------ -->
 
-    <section class="eventos-container">
+    <section class="eventos-container" id="eventos">
         <h2>Próximos Eventos</h2>
         <article class="eventos-item" id="slide1">
                 <figure>
@@ -327,7 +334,7 @@
 
                 <div class="right">
                     <div class="form-wrapper">
-                        <form action="#">
+                        <form action="resources/enviar_formulario.php" method="post" enctype="application/x-www-form-urlencoded">
                             <div class="form-group">
                                 <label for="name">Tu nombre</label>
                                 <div class="input-wrapper">
@@ -369,7 +376,7 @@
                 <img src="img/01_T_Asset_Blog-03_v1.jpg" alt="">
             </picture>
         </figure>
-        <h2 class="contact-heading" id="head-unite">¡Unite a nuestro equipo!</h2>
+        <h2 id="head-unite">¡Unite a nuestro equipo!</h2>
         <p class="contact-desc">Contame tus ideas y projectos, juntos las haremos realidad a nivel digital poniendo la creatividad y el diseño como eje principal.</p>
         <button class="contacto-button">Envianos tu CV</button>
     </article>
