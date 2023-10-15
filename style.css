@@ -156,9 +156,14 @@ nav:target #burger li:last-child {
 
 #sec-01 h2 {
     text-align: center;
-    font-size: var(--dl);
+    font-size: var(--tl);
     width: 75vw;
     margin: 0 auto;
+}
+
+#sec-01 p{
+    font-size: var(--bm);
+    line-height: 2.12rem;
 }
 
 #sec-01 article {
@@ -187,7 +192,7 @@ nav:target #burger li:last-child {
 
 
 #sec-01 h3 {
-    font-size: var(--ds);
+    font-size: var(--tl);
     text-transform: uppercase;
     padding-bottom: 20px;
 
@@ -212,7 +217,7 @@ nav:target #burger li:last-child {
 #sec-02 h2 {
     display: flex;
     justify-content: flex-end;
-    font-size: var(--dl);
+    font-size: var(--tl);
     line-height: 4.4375rem;
     position: absolute;
     right: 15rem;
@@ -284,7 +289,7 @@ nav:target #burger li:last-child {
     font-size: var(--ts);
 }
 
-/* ------------------------------------BLOGS----------------------------- */
+/* ------------------------------------BLOG DE LA COMUNIDAD----------------------------- */
 
 .blog-container,.eventos-container {
     position: relative;
@@ -292,6 +297,10 @@ nav:target #burger li:last-child {
     max-width: 75vw;
     margin: 0 auto;
     text-align: center;
+}
+
+.blog-container h2{
+    font-size: var(--tl);
 }
 
 .blog-container .blog-item, .eventos-container .eventos-item {
@@ -332,8 +341,14 @@ nav:target #burger li:last-child {
     border: none;
 }
 
+/*--------------------------- EVENTOS ---------------------------*/
+
 .eventos-container .eventos-item img {
     width: 100%;
+}
+
+.eventos-container h2{
+    font-size: var(--tl);
 }
 
 .eventos-item h3 {
@@ -379,7 +394,7 @@ nav:target #burger li:last-child {
     border: 2px solid rgba(141,78,235,0.35);
 }
 
-/* ------------------------------------NUESTROS ENCUENTROS----------------------------- */
+/* ------------------------------------VIDEO NUESTROS ENCUENTROS----------------------------- */
 
 #sec-06 {
     position: relative;
@@ -387,6 +402,10 @@ nav:target #burger li:last-child {
     max-width: 75vw;
     margin: 0 auto;
     text-align: center;
+}
+
+#sec-06 h2{
+    font-size: var(--tl);
 }
 
 #sec-06 .sec-video iframe {
@@ -430,44 +449,53 @@ nav:target #burger li:last-child {
 
 #sec-07 {
     background: var(--neutral-70);
+    margin-top: 2rem;
+}
+
+#sec-07 h2{
+    font-size: var(--tl);
+    line-height: 2.12rem;
+    padding: 0.62rem 0 0.62rem 0;
 }
 
 #contact {
     width: 75vw;
     margin: 0 auto;
 }
-#contact .wrapper {
+#contact, .wrapper {
     flex-direction: column-reverse;
 	justify-content: center;
 	align-items: center;
 }
 
-#contact .left .contact-heading, .contact-heading {
-    font-size: 3rem;
+#contect, .left {
+    font-size: var(--bm);
 	margin-bottom: 1rem;
+    line-height: 1.68rem;
 }
 
-#contact .left .contact-desc, .contact-desc {
+#contact, .left .contact-desc, .contact-desc {
     color: var(--secondary-gray);
-	margin-bottom: 4rem;
+	margin-bottom: 2rem;
 }
 
-.form-wrapper form {
+.form-wrapper, form {
     text-align: center;
 }
 
-#contact .right .form-group {
+#contact, .right .form-group {
     margin-bottom: 1rem;
     text-align: left;
 }
 
 #contact .right .form-group label {
+    font-size: var(--ts);
 	margin-bottom: 0.5rem;
 	display: inline-block;
 	font-size: var(--tm);
 }
 
-#contact .right .form-group .input-wrapper {
+#contact, .right .form-group .input-wrapper {
     background-color: white;
 	color: black;
 	width: 100%;
@@ -522,7 +550,7 @@ nav:target #burger li:last-child {
     transform: scale(0.98);
 }
 
-/* ------------------------------------EUNITE A NUESTRO EQUIPO----------------------------- */
+/* ------------------------------------UNITE A NUESTRO EQUIPO----------------------------- */
 
 #sec-unite {
     width: 75vw;
@@ -714,4 +742,58 @@ footer {
         font-size: var(--wv);
         padding: 0;
     }
+
+
+    /* ------------------------------------NUESTRO EQUIPO----------------------------- */
+
+    #sec-01 {
+        display: grid;
+        justify-content: center;
+        margin: 0 18.75rem 0 18.75rem;
+        gap: 1.25rem;
+    }
+
+    #sec-01 h2 {
+        text-align: center;
+        font-size: var(--dl);
+        padding: 3.31rem;
+    }
+
+    #sec-01 article {
+        text-align: center;
+    }
+
+    .mision, .valores{
+        width: 30.625rem;
+        text-align: left;
+    }
+
+    .vision, .objetivos{
+        width: 30.625rem;
+        text-align: right;
+    }
+
+    .sec-mision, .sec-valores {
+        width: 52.5rem;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        font-size: var(--bl);
+    }
+
+    .sec-vision, .sec-objetivos {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 30px;
+        font-size: var(--bl);
+    }
+
+    #sec-01 h3 {
+        font-size: var(--ds);
+        text-transform: uppercase;
+        padding-bottom: 20px;
+    
+    }
+
 }
