@@ -34,7 +34,8 @@ body {
 }
 
 header {
-    margin: 1rem 1.5rem;
+    /* margin: 1rem 1.5rem;
+    position: fixed; */
 }
 
 #logo {
@@ -76,6 +77,7 @@ nav ul {
 }
 
 #menu {
+    flex: 3;
     position: absolute;
     top: 0;
     left: 0;
@@ -123,7 +125,12 @@ nav:target #burger li:last-child {
 /* ------------------------------------HERO SECTION----------------------------- */
 
 #sec-carrusel {
+    flex: 0;
     width: 100%;
+}
+
+#sec-carrusel figure {
+    flex: 0;
 }
 
 #sec-carrusel img {
@@ -147,48 +154,37 @@ nav:target #burger li:last-child {
 
 /* ------------------------------------QUIENES SOMOS----------------------------- */
 
-#sec-01 {
-    display: grid;
-    justify-content: center;
-    margin: 0 18.75rem 0 18.75rem;
-    gap: 1.25rem;
-}
-
 #sec-01 h2 {
     text-align: center;
     font-size: var(--dl);
-    padding: 3.31rem;
+    width: 75vw;
+    margin: 0 auto;
 }
 
 #sec-01 article {
+    width: 75vw;
+    margin: 4rem auto;
     text-align: center;
-}
-
-.mision, .valores {
-    width: 30.625rem;
-    text-align: left;
-}
-
-.vision, .objetivos {
-    width: 30.625rem;
-    text-align: right;
-}
-
-.sec-mision, .sec-valores {
-    width: 52.5rem;
-    display: flex;
-    align-items: center;
-    gap: 30px;
     font-size: var(--bl);
+    background: var(--neutral-dark-mode);
+    padding: 2rem;
+    border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px -1px 45px 0px #22105295;
+    -webkit-box-shadow: 0px -1px 45px 0px #22105295;
+    -moz-box-shadow: 0px -1px 45px 0px #22105295;
+    border: 2px solid var(--expand-dark-mode);
 }
 
-.sec-vision, .sec-objetivos {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    gap: 30px;
-    font-size: var(--bl);
+#sec-01 article:hover {
+    transform: scale(1.02);
 }
+
+#sec-01 article figure picture img {
+    margin: 0 0 1rem 0;
+}
+
 
 #sec-01 h3 {
     font-size: var(--ds);
@@ -377,10 +373,10 @@ nav:target #burger li:last-child {
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
-    border: 2px solid var(--neutral-dark-mode);
     box-shadow: 0px 0px 31px 0px rgba(141,78,235,0.35);
     -webkit-box-shadow: 0px 0px 31px 0px rgba(141,78,235,0.35);
     -moz-box-shadow: 0px 0px 31px 0px rgba(141,78,235,0.35);
+    border: 2px solid rgba(141,78,235,0.35);
 }
 
 /* ------------------------------------NUESTROS ENCUENTROS----------------------------- */
