@@ -22,7 +22,7 @@
             <ul id="bar">
               <li><a href="#blog">Blog</a></li>
               <li><a href="#eventos">Eventos</a></li>
-              <li><a href="#contactanos">Contactanos</a></li>
+              <li><a href="#sec-07">Contactanos</a></li>
           </ul>
       </nav>
   </header>
@@ -120,9 +120,9 @@
                 <article class="team-item">
                     <figure>
                         <picture>
-                            <source media="(max-width: 576px)" srcset="./img/02_Platter_Picture_v1 (1).png">
-                            <source media="(max-width: 991px)" srcset="./img/02_Platter_Picture_v1 (1).png">
-                            <img src="./img/02_Platter_Picture_v1 (1).png" alt="Emily Gaitan">
+                            <source media="(min-width: 576px)" srcset="./img/03_Platter_Picture_v1.png">
+                            <source media="(min-width: 991px)" srcset="./img/03_Platter_Picture_v1.png">
+                            <img src="./img/03_Platter_Picture_v1.png" alt="Paul Frech">
                         </picture>
                     </figure>
                     <div class="team-item-text">
@@ -150,8 +150,8 @@
                 <article class="team-item">
                     <picture>
                         <figure>
-                            <source media="(min-width: 576px)" srcset="img/n_e_ser_web.png">
-                            <source media="(min-width: 991px)" srcset="img/n_e_ser_t_m.png">
+                            <source media="(min-width: 576px)" srcset="./img/04_Platter_Picture_v1.png">
+                            <source media="(min-width: 991px)" srcset="./img/04_Platter_Picture_v1.png">
                             <img src="./img/04_Platter_Picture_v1.png" alt="Sergio Cast">
                         </figure>
                     </picture>
@@ -164,9 +164,9 @@
                 <article class="team-item">
                     <figure>
                         <picture>
-                            <source media="(min-width: 576px)" srcset="img/n_e_pau_web.png">
-                            <source media="(min-width: 991px)" srcset="img/n_e_pau_t_m.png">
-                            <img src="./img/03_Platter_Picture_v1.png" alt="Paul Frech">
+                            <source media="(max-width: 576px)" srcset="./img/02_Platter_Picture_v1 (1).png">
+                            <source media="(max-width: 991px)" srcset="./img/02_Platter_Picture_v1 (1).png">
+                            <img src="./img/02_Platter_Picture_v1 (1).png" alt="Emily Gaitan">
                         </picture>
                     </figure>
                     <div class="team-item-text">
@@ -179,11 +179,11 @@
 
     <!-- ------------------------------------BLOG DE LA COMUNIDAD------------------------------------ -->
 
-    <section class="blog-container">
+    <section class="blog-container" id="blog">
         <h2>Blogs de la Comunidad</h2>
         <article class="blog-item" id="slide1">
             <a href="#">
-                <button class="blog-button">UX/UI</button>
+                <button class="blog-button" id="cripto">Cripto</button>
                 <figure>
                     <picture>
                         <source media="(min-width: )" srcset="">
@@ -213,7 +213,7 @@
 
         <article class="blog-item" id="slide3">
             <a href="#">
-                <button class="blog-button">UX/UI</button>
+                <button class="blog-button" id="dev">Developer</button>
                 <figure>
                     <picture>
                         <source media="(min-width: )" srcset="">
@@ -229,7 +229,7 @@
 
     <!-- ------------------------------------EVENTOS SECTION------------------------------------ -->
 
-    <section class="eventos-container">
+    <section class="eventos-container" id="eventos">
         <h2>Próximos Eventos</h2>
         <article class="eventos-item" id="slide1">
                 <figure>
@@ -326,7 +326,6 @@
 
     <section id="sec-07">
         <article class="container" id="contact">
-            <h2 class="section-heading" data-outline="Contacto">Contacto</h2>
             <div class="wrapper">
                 <div class="left">
                     <h2 class="contact-heading">Escribinos tu consulta</h2>
@@ -335,7 +334,7 @@
 
                 <div class="right">
                     <div class="form-wrapper">
-                        <form action="#">
+                        <form action="resources/enviar_formulario.php" method="post" enctype="application/x-www-form-urlencoded">
                             <div class="form-group">
                                 <label for="name">Tu nombre</label>
                                 <div class="input-wrapper">

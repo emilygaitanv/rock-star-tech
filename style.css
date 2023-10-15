@@ -34,13 +34,12 @@ body {
 }
 
 header {
-    /* margin: 1rem 1.5rem;
-    position: fixed; */
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
 }
 
 #logo {
     background: url(./resources/Logo-P-42px.svg);
-    background-size: 4rem;
     background-repeat: no-repeat;
     background-position: right;
 }
@@ -66,6 +65,11 @@ h1 {
     background-position: center;
 }
 
+#burger {
+    text-indent: -8000px;
+    overflow: hidden;
+}
+
 #burger li a {
     display: block;
     width: 4rem;
@@ -77,17 +81,11 @@ nav ul {
 }
 
 #menu {
-    flex: 3;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-}
-
-#burger {
-    text-indent: -8000px;
-    overflow: hidden;
-    padding: 0 20px 0 20px;
+    z-index: 1;
 }
 
 #bar {
@@ -150,8 +148,6 @@ nav:target #burger li:last-child {
     transform: translateZ(0);
 } */
 
-
-
 /* ------------------------------------QUIENES SOMOS----------------------------- */
 
 #sec-01 h2 {
@@ -194,29 +190,32 @@ nav:target #burger li:last-child {
 #sec-02 {
     position: relative;
     width: 75vw;
-    margin: 0 auto;
+    margin: 12rem auto 0;
     text-align: center;
 }
 
 .team-item {
     display: flex;
     align-items: center;
-    gap: 2rem;
     text-align: left;
+    gap: 2rem;
+    margin: 1rem 0;
+    padding: 0.62rem 0.62rem;
     border-radius: 60px 60px 60px 60px;
     -webkit-border-radius: 60px 60px 60px 60px;
     -moz-border-radius: 60px 60px 60px 60px;
-    background: linear-gradient(45deg, var(--neutral-white), var(--neutral-dark-mode));
-    margin: 1rem 0;
-    padding: 0.62rem 0.62rem;
+    background: linear-gradient(0deg,var(--neutral-70) 0%, var(--neutral-dark-mode) 90%);
+    background: -webkit-linear-gradient(0deg,var(--neutral-70) 0%, var(--neutral-dark-mode) 90%);
+    background: -moz-linear-gradient(0deg,var(--neutral-70) 0%, var(--neutral-dark-mode) 99%);
 }
 
 .team-item:nth-child(even) {
     flex-direction: row-reverse;
-    background: linear-gradient(-45deg, var(--neutral-white), var(--neutral-dark-mode))
+    text-align: right;
+    background: linear-gradient(-180deg,var(--neutral-70) 0%, var(--neutral-dark-mode) 90%);
+    background: -webkit-linear-gradient(-180deg,var(--neutral-70) 0%, var(--neutral-dark-mode) 90%);
+    background: -moz-linear-gradient(-180deg,var(--neutral-70) 0%, var(--neutral-dark-mode) 99%);
 }
-
-
 
 .team-01 h3 {
     font-size: var(--tl);
@@ -225,8 +224,6 @@ nav:target #burger li:last-child {
 .team-01 p {
     font-size: var(--ts);
 }
-
-/*-----------TEAM 02-----------*/
 
 .team-02 h3 {
     font-size: var(--tl);
@@ -242,7 +239,7 @@ nav:target #burger li:last-child {
     position: relative;
     width: 100%;
     max-width: 75vw;
-    margin: 0 auto;
+    margin: 12rem auto;
     text-align: center;
 }
 
@@ -282,6 +279,14 @@ nav:target #burger li:last-child {
     -moz-border-radius: 10px 10px 10px 10px;
     padding: 0.3rem 0.4rem;
     border: none;
+}
+
+#cripto {
+    background: var(--secondary-caribbean-green);
+}
+
+#dev {
+    background: var(--secondary-french-fucsia);
 }
 
 .eventos-container .eventos-item img {
@@ -337,7 +342,7 @@ nav:target #burger li:last-child {
     position: relative;
     width: 100%;
     max-width: 75vw;
-    margin: 0 auto;
+    margin: 12rem auto 0;
     text-align: center;
 }
 
@@ -359,7 +364,7 @@ nav:target #burger li:last-child {
     position: relative;
     width: 100%;
     max-width: 75vw;
-    margin: 0 auto;
+    margin: 0 auto 7rem;
     text-align: center;
 }
 
@@ -382,11 +387,13 @@ nav:target #burger li:last-child {
 
 #sec-07 {
     background: var(--neutral-70);
+    margin-bottom: 7rem;
 }
 
 #contact {
     width: 75vw;
     margin: 0 auto;
+    padding: 6rem 0;
 }
 #contact .wrapper {
     flex-direction: column-reverse;
@@ -589,6 +596,21 @@ footer {
 }
 #copyright p {
 	margin: 1rem;
+}
+
+/* ------------------------------------FIXING----------------------------- */
+
+#sec-01 {
+    margin-top: 4rem;
+}
+
+#sec-03, #sec-04, #sec-05 {
+    margin: 12rem 0;
+}
+
+
+footer {
+    margin: 4rem 0 0;
 }
 
 /* ------------------------------------TABLET VIEW----------------------------- */
