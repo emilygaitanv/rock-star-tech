@@ -177,10 +177,6 @@ nav:target #burger li:last-child {
     border: 2px solid var(--expand-dark-mode);
 }
 
-#sec-01 article:hover {
-    transform: scale(1.02);
-}
-
 #sec-01 article figure picture img {
     margin: 0 0 1rem 0;
 }
@@ -197,54 +193,30 @@ nav:target #burger li:last-child {
 
 #sec-02 {
     position: relative;
-    margin: 5rem 18.75rem 5rem 18.75rem;
-    gap: 1.25rem;
+    width: 75vw;
+    margin: 0 auto;
+    text-align: center;
 }
 
-#our-team-container {
+.team-item {
     display: flex;
-    justify-content: center;
-    align-items: baseline;
-    display: flex;
-    gap: 3.125rem;
+    align-items: center;
+    gap: 2rem;
+    text-align: left;
+    border-radius: 60px 60px 60px 60px;
+    -webkit-border-radius: 60px 60px 60px 60px;
+    -moz-border-radius: 60px 60px 60px 60px;
+    background: linear-gradient(45deg, var(--neutral-white), var(--neutral-dark-mode));
+    margin: 1rem 0;
+    padding: 0.62rem 0.62rem;
 }
 
-#sec-02 h2 {
-    display: flex;
-    justify-content: flex-end;
-    font-size: var(--dl);
-    line-height: 4.4375rem;
-    position: absolute;
-    right: 15rem;
-    bottom: 30rem;
-
+.team-item:nth-child(even) {
+    flex-direction: row-reverse;
+    background: linear-gradient(-45deg, var(--neutral-white), var(--neutral-dark-mode))
 }
 
-.team-01 {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 3.125rem;
-}
 
-.info-emi {
-    position: absolute;
-    bottom: 20rem;
-    right: 16rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.info-kia {
-    position: absolute;
-    bottom: 4rem;
-    right: 12rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
 
 .team-01 h3 {
     font-size: var(--tl);
@@ -255,26 +227,6 @@ nav:target #burger li:last-child {
 }
 
 /*-----------TEAM 02-----------*/
-
-.team-02 {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 3.125rem;
-}
-
-.info-sergio {
-    position: absolute;
-    bottom: 22rem;
-    right: 9rem;
-}
-
-.info-paul {
-    position: absolute;
-    bottom: 6rem;
-    right: 6rem;
-}
 
 .team-02 h3 {
     font-size: var(--tl);
@@ -587,6 +539,10 @@ footer {
     margin: 2rem 0 0 0;
 }
 
+#footer .col-2, #footer .col-3 {
+    display: none;
+}
+
 #footer .column-heading {
 	margin: 0 0 2rem 0;
 	text-transform: uppercase;
@@ -713,5 +669,57 @@ footer {
     #bar li a {
         font-size: var(--wv);
         padding: 0;
+    }
+
+    /* ------------------------------------¿QUIENES SOMOS?----------------------------- */
+
+    #sec-01 {
+        display: grid;
+        justify-content: center;
+        margin: 0 14.5rem 0 14.5rem;
+        gap: 1.25rem;
+    }
+    
+    #sec-01 h2 {
+        text-align: center;
+        font-size: var(--dl);
+        padding: 3.31rem;
+    }
+    
+    #sec-01 article {
+        text-align: center;
+    }
+    
+    .mision, .valores {
+        width: 30.625rem;
+        text-align: left;
+    }
+    
+    .vision, .objetivos {
+        width: 30.625rem;
+        text-align: right;
+    }
+    
+    .sec-mision, .sec-valores {
+        width: 52.5rem;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        font-size: var(--bl);
+    }
+    
+    .sec-vision, .sec-objetivos {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 30px;
+        font-size: var(--bl);
+    }
+    
+    #sec-01 h3 {
+        font-size: var(--ds);
+        text-transform: uppercase;
+        padding-bottom: 20px;
+    
     }
 }
