@@ -462,28 +462,28 @@ nav:target #burger li:last-child {
     width: 75vw;
     margin: 0 auto;
 }
-#contact, .wrapper {
+#contact .wrapper {
     flex-direction: column-reverse;
 	justify-content: center;
 	align-items: center;
 }
 
-#contect, .left {
+#contact .contact-desc {
     font-size: var(--bm);
 	margin-bottom: 1rem;
     line-height: 1.68rem;
 }
 
-#contact, .left .contact-desc, .contact-desc {
+#contact .left .contact-desc, .contact-desc {
     color: var(--secondary-gray);
 	margin-bottom: 2rem;
 }
 
-.form-wrapper, form {
+.form-wrapper form {
     text-align: center;
 }
 
-#contact, .right .form-group {
+#contact .right .form-group {
     margin-bottom: 1rem;
     text-align: left;
 }
@@ -495,7 +495,7 @@ nav:target #burger li:last-child {
 	font-size: var(--tm);
 }
 
-#contact, .right .form-group .input-wrapper {
+#contact .right .form-group .input-wrapper {
     background-color: white;
 	color: black;
 	width: 100%;
