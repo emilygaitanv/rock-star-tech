@@ -227,19 +227,19 @@ nav:target #burger li:last-child {
 }
 
 .team-01 h3 {
-    font-size: var(--tl);
+    font-size: var(--tm);
 }
 
 .team-01 p {
-    font-size: var(--ts);
+    font-size: var(--bl);
 }
 
 .team-02 h3 {
-    font-size: var(--tl);
+    font-size: var(--tm);
 }
 
 .team-02 p {
-    font-size: var(--ts);
+    font-size: var(--bl);
 }
 
 /* ------------------------------------BLOG DE LA COMUNIDAD----------------------------- */
@@ -561,7 +561,7 @@ nav:target #burger li:last-child {
 /* ------------------------------------FOOTER SECTION----------------------------- */
 
 footer {
-    background: var(--primary-lavander-indigo);
+    background: var(--neutral-70);
 }
 
 #footer {
@@ -573,7 +573,7 @@ footer {
 }
 
 #logo-footer {
-    background-image: url(./resources/01_Logo_Brand_RockStartTech_Asset_MW_P1_v1-09.svg);
+    background-image: url(./resources/01_Logo_Brand_RockStartTech_Colour_White_Asset_MW_P1_v1-12.svg);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
