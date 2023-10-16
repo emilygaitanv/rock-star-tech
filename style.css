@@ -989,7 +989,6 @@ footer {
         -moz-border-radius: 80px 80px 80px 80px;
     }
 
-<<<<<<< Updated upstream
     /*-EVENTOS SECTION-*/
 
     .blog-container h2{
@@ -1001,13 +1000,12 @@ footer {
     .eventos-container h2{
         font-size: var(--dm);
     }
-=======
+    
     /* ------------------------------------PROXIMOS EVENTOS----------------------------- */
 
     .eventos-container .eventos-item p {
         display: inherit;
       }
->>>>>>> Stashed changes
     
     /*-NUESTROS ENCUENTROS-*/
     
