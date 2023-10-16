@@ -942,9 +942,13 @@ footer {
     }
 
     /*-¿QUIENES SOMOS?-*/
+
+    #sec-01 p{
+        font-size: var(--bl);
+    }
     
     #sec-01 {
-        gap: 0;
+        gap: 1rem;
     }
     
     #sec-01 h2 {
@@ -982,7 +986,7 @@ footer {
     }
 
     .team-02 h3{
-        font-size: var(--dm);
+        font-size: var(--ds);
     }
 
     .team-01 p{
@@ -994,7 +998,7 @@ footer {
     }
 
     #sec-02 {
-        width: 60vw;
+        width: 46vw;
     }
     
     .team-item {
