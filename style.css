@@ -334,7 +334,6 @@ nav:target #burger li:last-child {
 
 .blog-item .blog-button {
     position: absolute;
-    top: calc(1.5rem+2rem);
     right: 1.5rem;
     background-color: var(--secondary-banana-yellow);
     border-radius: 10px 10px 10px 10px;
@@ -1001,6 +1000,12 @@ footer {
     .eventos-container h2{
         font-size: var(--dm);
     }
+    
+    /* ------------------------------------PROXIMOS EVENTOS----------------------------- */
+
+    .eventos-container .eventos-item p {
+        display: inherit;
+      }
     
     /*-NUESTROS ENCUENTROS-*/
     
