@@ -977,6 +977,22 @@ footer {
         font-size: var(--dm);
     }
 
+    .team-01 h3{
+        font-size: var(--ds);
+    }
+
+    .team-02 h3{
+        font-size: var(--dm);
+    }
+
+    .team-01 p{
+        font-size: var(--tm);
+    }
+
+    .team-02 p{
+        font-size: var(--tm);
+    }
+
     #sec-02 {
         width: 60vw;
     }
@@ -985,7 +1001,7 @@ footer {
         margin: 1rem 0;
         padding: 2rem;
         border-radius: 80px 80px 80px 80px;
-        -webkit-border-radius: 80px 80px 80px 80px;
+        -webkit-border-radius: 200px 200px 200px 200px;
         -moz-border-radius: 80px 80px 80px 80px;
     }
 
@@ -1001,7 +1017,7 @@ footer {
         font-size: var(--dm);
     }
     
-    /* ------------------------------------PROXIMOS EVENTOS----------------------------- */
+    /* -PROXIMOS EVENTOS-*/
 
     .eventos-container .eventos-item p {
         display: inherit;
