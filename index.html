@@ -148,13 +148,13 @@
 
             <div class="team-02">
                 <article class="team-item">
-                    <picture>
                         <figure>
-                            <source media="(min-width: 576px)" srcset="./img/04_Platter_Picture_v1.png">
-                            <source media="(min-width: 991px)" srcset="./img/04_Platter_Picture_v1.png">
-                            <img src="./img/04_Platter_Picture_v1.png" alt="Sergio Cast">
+                            <picture>
+                                <source media="(min-width: 576px)" srcset="./img/04_Platter_Picture_v1.png">
+                                <source media="(min-width: 991px)" srcset="./img/04_Platter_Picture_v1.png">
+                                <img src="./img/04_Platter_Picture_v1.png" alt="Sergio Cast">
+                            </picture>
                         </figure>
-                    </picture>
                     <div class="team-item-text">
                         <h3 class="team">Sergio Cast</h3>
                         <p class="title-team">CEO</p>
@@ -182,9 +182,9 @@
     <section class="blog-container" id="blog">
         <h2>Blogs de la Comunidad</h2>
         <div class="alignment-blog">
-            <article class="blog-item" id="slide1">
+            <article class="blog-item">
+                <button class="blog-button" id="cripto">Cripto</button>
                 <a href="#">
-                    <button class="blog-button" id="cripto">Cripto</button>
                     <figure>
                         <picture>
                             <source media="(min-width: 557px)" srcset="img/01_M_Asset_Blog-01_v1.webp">
@@ -197,9 +197,9 @@
                 </a>
             </article>
 
-            <article class="blog-item" id="slide2">
+            <article class="blog-item">
+                <button class="blog-button" id="ux">UX/UI</button>
                 <a href="#">
-                    <button class="blog-button" id="ux">UX/UI</button>
                     <figure>
                         <picture>
                             <source media="(min-width: 557px)" srcset="img/01_M_Asset_Blog-02_v1.webp">
@@ -212,9 +212,9 @@
                 </a>
             </article>
 
-            <article class="blog-item" id="slide3">
+            <article class="blog-item">
+                <button class="blog-button" id="dev">Developer</button>
                 <a href="#">
-                    <button class="blog-button" id="dev">Developer</button>
                     <figure>
                         <picture>
                             <source media="(min-width: 557px)" srcset="img/01_M_Asset_Blog-03_v1.webp">
@@ -227,7 +227,6 @@
                 </a>
             </article>
         </div>
-        </div>
     </section>
 
     <!-- ------------------------------------EVENTOS SECTION------------------------------------ -->
@@ -235,7 +234,7 @@
     <section class="eventos-container" id="eventos">
         <h2>Próximos Eventos</h2>
         <div class="alignment-eventos">
-            <article class="eventos-item" id="slide1">
+            <article class="eventos-item">
                 <figure>
                     <picture>
                         <source media="(min-width: 557px)" srcset="img/01_M_Asset_Blog-01_v1.webp">
@@ -248,7 +247,7 @@
                 <button class="eventos-button">Registrate</button>
             </article>
 
-            <article class="eventos-item" id="slide2">
+            <article class="eventos-item">
                 <figure>
                     <picture>
                         <source media="(min-width: 557px)" srcset="img/01_M_Asset_Blog-02_v1.webp">
@@ -261,7 +260,7 @@
                 <button class="eventos-button">Registrate</button>
             </article>
 
-            <article class="eventos-item" id="slide3">
+            <article class="eventos-item">
                 <figure>
                     <picture>
                         <source media="(min-width: 557px)" srcset="img/01_M_Asset_Blog-03_v1.webp">
@@ -360,7 +359,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="message">Mensaje</label>
-                                <textarea type="text" id="message" name="message" width="100%"></textarea>
+                                <textarea id="message" name="message"></textarea>
                             </div>
                             <button type="submit">Enviar</button>
                         </form>
