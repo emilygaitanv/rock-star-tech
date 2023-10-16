@@ -74,7 +74,7 @@
     --bs: 11.1px;
 }
 
-/* -------------- Navbar  ------------ */
+/*-Navbar-*/
 
 body {
     color: var(--neutral-white);
@@ -168,7 +168,7 @@ nav:target #burger li:last-child {
     display: flex;
 }
 
-/* ------------------------------------HERO SECTION----------------------------- */
+/*-HERO SECTION-*/
 
 #sec-carrusel {
     flex: 0;
@@ -183,7 +183,7 @@ nav:target #burger li:last-child {
     width: 100%;
 }
 
-/* ------------------------------------QUIENES SOMOS----------------------------- */
+/*-QUIENES SOMOS-*/
 
 #sec-01 h2 {
     text-align: center;
@@ -233,7 +233,7 @@ nav:target #burger li:last-child {
 
 }
 
-/* ------------------------------------NUESTRO EQUIPO----------------------------- */
+/*-NUESTRO EQUIPO-*/
 
 #sec-02 {
     position: relative;
@@ -291,7 +291,7 @@ nav:target #burger li:last-child {
     font-size: var(--bl);
 }
 
-/* ------------------------------------BLOG DE LA COMUNIDAD----------------------------- */
+/*-BLOG DE LA COMUNIDAD-*/
 
 .blog-container,.eventos-container {
     position: relative;
@@ -344,7 +344,7 @@ nav:target #burger li:last-child {
     border: none;
 }
 
-/*--------------------------- EVENTOS ---------------------------*/
+/*-EVENTOS-*/
 #cripto {
     background: var(--secondary-caribbean-green);
 }
@@ -404,7 +404,7 @@ nav:target #burger li:last-child {
     border: 2px solid rgba(141,78,235,0.35);
 }
 
-/* ------------------------------------VIDEO NUESTROS ENCUENTROS----------------------------- */
+/*-VIDEO NUESTROS ENCUENTROS-*/
 
 #sec-06 {
     position: relative;
@@ -435,7 +435,7 @@ nav:target #burger li:last-child {
     height: 45vh;
 }
 
-/* ------------------------------------GALERIA DE IMAGENES----------------------------- */
+/*-GALERIA DE IMAGENES-*/
 
 #sec-galeria {
     position: relative;
@@ -461,7 +461,7 @@ nav:target #burger li:last-child {
     -moz-box-shadow: 0px 0px 31px 0px rgba(141,78,235,0.35);
 }
 
-/* ------------------------------------ESCRIBINOS TU CONSULTA----------------------------- */
+/*-ESCRIBINOS TU CONSULTA-*/
 
 #sec-07 {
     background: var(--neutral-70);
@@ -568,7 +568,7 @@ nav:target #burger li:last-child {
     transform: scale(0.98);
 }
 
-/* ------------------------------------UNITE A NUESTRO EQUIPO----------------------------- */
+/*-UNITE A NUESTRO EQUIPO-*/
 
 #sec-unite {
     width: 75vw;
@@ -616,7 +616,7 @@ nav:target #burger li:last-child {
 }
 
 
-/* ------------------------------------FOOTER SECTION----------------------------- */
+/*-FOOTER SECTION-*/
 
 footer {
     background: var(--neutral-70);
@@ -714,7 +714,7 @@ footer {
 	margin: 1rem;
 }
 
-/* ------------------------------------FIXING----------------------------- */
+/*-FIXING-*/
 
 #sec-01 {
     margin-top: 4rem;
@@ -729,11 +729,11 @@ footer {
     margin: 4rem 0 0;
 }
 
-/* ------------------------------------TABLET VIEW----------------------------- */
+/*-TABLET VIEW-*/
 
 @media screen and (min-width: 577px) {
     
-    /* ------------------------------------NAV BAR----------------------------- */
+    /*-NAV BAR-*/
     
     header {
         margin: 20px 0 0 10px;
@@ -754,7 +754,7 @@ footer {
         justify-content: flex-end;
     }
 
-    /* ------------------------------------¿QUIENES SOMOS?----------------------------- */
+    /*-¿QUIENES SOMOS?-*/
 
     #sec-01 {
         display: grid;
@@ -807,7 +807,7 @@ footer {
     
     }
 
-    /* ------------------------------------BLOGS DE LA COMUNIDAD----------------------------- */
+    /*-BLOGS DE LA COMUNIDAD-*/
 
     .blog-container, .eventos-container{
         max-width: 85vw;
@@ -840,10 +840,7 @@ footer {
         padding: 0.5rem 0;
     }
 
-    /* ------------------------------------FOOTER----------------------------- */
-
-
-    /* ------------------------------------FOOTER----------------------------- */
+    /*-FOOTER-*/
 
     #footer .col-2, #footer .col-3 {
         display: flex;
@@ -886,12 +883,11 @@ footer {
 
 }
 
-    
-
-/* ------------------------------------WEBSIDE VIEW----------------------------- */
+/*-WEBSIDE VIEW-*/
 
 @media screen and (min-width: 992px) {
-    /* ------------------------------------NAV BAR----------------------------- */
+    
+    /*-NAV BAR-*/
 
     header {
         display: flex;
@@ -946,7 +942,7 @@ footer {
         padding: 0;
     }
 
-    /* ------------------------------------¿QUIENES SOMOS?----------------------------- */
+    /*-¿QUIENES SOMOS?-*/
     
     #sec-01 {
         gap: 0;
@@ -976,8 +972,12 @@ footer {
         max-width: 15vw;
     }
     
-    /* ------------------------------------NUESTRO EQUIPO----------------------------- */
+    /*-NUESTRO EQUIPO-*/
     
+    #sec-02 h2{
+        font-size: var(--dm);
+    }
+
     #sec-02 {
         width: 60vw;
     }
@@ -989,9 +989,25 @@ footer {
         -webkit-border-radius: 80px 80px 80px 80px;
         -moz-border-radius: 80px 80px 80px 80px;
     }
+
+    /*-EVENTOS SECTION-*/
+
+    .blog-container h2{
+        font-size: var(--dm);
+    }
+
+    /*-EVENTOS SECTION-*/
+
+    .eventos-container h2{
+        font-size: var(--dm);
+    }
     
-    /* ------------------------------------NUESTROS ENCUENTROS----------------------------- */
+    /*-NUESTROS ENCUENTROS-*/
     
+    #sec-06 h2{
+        font-size: var(--dm);
+    }
+
     #sec-06 iframe {
         width: 75vw;
         height: 60vh;
@@ -1013,7 +1029,16 @@ footer {
         width: calc(75vw / 3.5);
     }
     
-    /* ------------------------------------CONTACTANOS----------------------------- */
+    /*-CONTACTANOS-*/
+
+    #sec-07 h2{
+        font-size: var(--dm);
+    }
+
+    #contact .left .contact-desc, .contact-desc{
+        font-size: var(--bl);
+    }
+
 
     #contact .wrapper {
         display: flex;
@@ -1036,7 +1061,17 @@ footer {
         align-items: center;
     }
 
-    /* ------------------------------------FOOTER----------------------------- */
+    /*-UNITE A NUESTRO EQUIPO-*/
+
+    #sec-08 #head-unite{
+        font-size: var(--ds);
+    }
+
+    #sec-08 .contact-desc{
+        font-size: var(--bl);
+    }
+
+    /*-FOOTER-*/
 
     #footer {
         align-items: start;
