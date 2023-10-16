@@ -135,19 +135,6 @@ nav:target #burger li:last-child {
     width: 100%;
 }
 
-/* .car-info {
-    font-size: var(--dl);
-    font-weight: 700;
-    position: absolute;
-    bottom: 20rem;
-    right: 32rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-} */
-
 /* ------------------------------------QUIENES SOMOS----------------------------- */
 
 #sec-01 h2 {
@@ -215,6 +202,7 @@ nav:target #burger li:last-child {
 }
 
 #sec-02 h2 {
+    font-size: var(--tl);
     margin-bottom: 3rem;
 }
 
@@ -505,6 +493,7 @@ nav:target #burger li:last-child {
 	border: none;
 	cursor: pointer;
     background: var(--secondary-caribbean-green);
+    font-size: var(--bl);
 }
 
 #contact .right .form-wrapper button:hover {
@@ -548,6 +537,7 @@ nav:target #burger li:last-child {
 	cursor: pointer;
     background: none;
     color: var(--secondary-caribbean-green);
+    font-size: var(--bm);
 }
 
 #sec-unite button:hover {
@@ -707,7 +697,7 @@ footer {
     
     #sec-01 h2 {
         text-align: center;
-        font-size: var(--dl);
+        font-size: var(--tl);
         padding: 3.31rem;
     }
     
@@ -743,7 +733,7 @@ footer {
     }
     
     #sec-01 h3 {
-        font-size: var(--ds);
+        font-size: var(--tm);
         text-transform: uppercase;
         padding-bottom: 20px;
     
@@ -782,7 +772,10 @@ footer {
         padding: 0.5rem 0;
     }
 
-    /* ------------------------------------NAV BAR----------------------------- */
+    /* ------------------------------------FOOTER----------------------------- */
+
+
+    /* ------------------------------------FOOTER----------------------------- */
 
     #footer .col-2, #footer .col-3 {
         display: flex;
@@ -812,7 +805,20 @@ footer {
         width: calc(35vw / 4);
         height: calc(35vw/4);
     }
+
+    #sec-07 h2{
+    font-size: var(--tl);
+    }
+
+    #contact .contact-desc {
+    font-size: var(--bl);
+    line-height: 1.68rem;
+    }
+
+
 }
+
+    
 
 /* ------------------------------------WEBSIDE VIEW----------------------------- */
 
