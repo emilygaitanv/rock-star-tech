@@ -249,9 +249,9 @@ nav:target #burger li:last-child {
     gap: 2rem;
     margin: 1rem 0;
     padding: 0.62rem 0.62rem;
-    border-radius: 60px 60px 60px 60px;
-    -webkit-border-radius: 60px 60px 60px 60px;
-    -moz-border-radius: 60px 60px 60px 60px;
+    border-radius: 70px 70px 70px 70px;
+    -webkit-border-radius: 70px 70px 70px 70px;
+    -moz-border-radius: 70px 70px 70px 70px;
     background: linear-gradient(0deg,var(--neutral-70) 0%, var(--neutral-dark-mode) 90%);
     background: -webkit-linear-gradient(0deg,var(--neutral-70) 0%, var(--neutral-dark-mode) 90%);
     background: -moz-linear-gradient(0deg,var(--neutral-70) 0%, var(--neutral-dark-mode) 99%);
@@ -344,6 +344,7 @@ nav:target #burger li:last-child {
 }
 
 /*-EVENTOS-*/
+
 #cripto {
     background: var(--secondary-caribbean-green);
 }
@@ -356,7 +357,7 @@ nav:target #burger li:last-child {
     width: 100%;
 }
 
-.eventos-container h2{
+.eventos-container h2 {
     font-size: var(--tl);
 }
 
